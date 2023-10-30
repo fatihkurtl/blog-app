@@ -1,0 +1,123 @@
+{
+    "web-development": "Web Geliştirme",
+    "trends": "Trendler",
+    "developer-tools": "Geliştirici Araçları",
+    "discover": "Keşfet",
+    "contact": "İletişim",
+
+    "sign-out": "Çıkış Yap",
+
+    "resources": "Kaynaklar",
+    "follow-us": "Bizi Takip Edin",
+    "categories": "Kategoriler",
+    "rights": "Tüm hakları saklıdır.",
+    "legal": "Yasal",
+    "terms-conditions": "Hükümler & Koşullar",
+    "privacy-policy": "Gizlilik Politikası",
+
+    "latest-posts": "Son Gönderiler",
+
+    "read-more": "Devamını Oku",
+
+    "previous": "Önceki",
+    "next": "Sonraki",
+
+    "contact-us": "Bize Ulaşın",
+    "contact-desc": "Teknik bir sorununuz mu var? Bir beta özelliği hakkında geri bildirim göndermek mi istiyorsunuz? İş planımız hakkında ayrıntılara mı ihtiyacınız var? Bize bildirin.",
+    "e-mail": "E-Posta",
+    "subject": "Konu",
+    "subject-placeholder": "Size nasıl yardımcı olabileceğimizi bize bildirin",
+    "message": "Mesajınız",
+    "message-placeholder": "Mesaj bırakın...",
+    "send-message-btn": "Mesaj Gönder",
+    
+    "sign-up": "Üye ol",
+    "fullname": "Ad Soyad",
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "profile-picture": "Profil Fotoğrafı",
+    "terms": "Hüküm ve koşulları kabul ediyorum",
+    "register": "Kayıt Ol",
+    "already-member": "Zaten üye misiniz?",
+    "login": "Giriş Yap",
+
+    "login-to": "./fullstack'te oturum açın",
+    "e-mail-placeholder": "örnek",
+    "remember-device": "Bu cihazı hatırla",
+    "forgot-password": "Şifremi Unuttum?",
+    "not-a-member-yet": "Henüz üye değil misiniz?",
+    "create-account": "Hesap Oluştur",
+    "login-banner": "Web geliştirme, trendler ve geliştirici araçları hakkında her şey",
+    "join-community": "Geliştirici topluluğuna katılın ve bilginizi paylaşın.",
+
+    "register-banner": "fullstack.com'a hoş geldiniz! Hesap oluşturarak geniş içeriklere erişebilir ve topluluğumuza katılabilirsiniz.",
+
+    "or": "veya",
+    "send": "Gönder",
+    "comment-placeholder": "Yorum bırakın...",
+
+    "no-comments-yet": "Henüz hiç yorum yok.",
+    "be-the-first-to-comment": "İlk yorum yapan siz olun!",
+
+    "admin-login": "Admin paneli için giriş yapın",
+    "remember-me": "Beni hatırla",
+
+    "reset-your-password": "E-postanızla şifrenizi sıfırlayın",
+    "send-reset-link": "Sıfırlama bağlantısı gönder",
+    "reset-password-banner": "E-postanızı girin; hesabınıza tekrar erişebilmeniz için size bir bağlantı gönderelim.",
+    
+    "new-password": "Yeni şifrenizi girin",
+    "confirm-password": "Şifreyi onayla",
+    "save": "Kaydet",
+    "new-password-banner": "Güvenliğiniz için güçlü bir parola seçin",
+    "new-password-info": "Yeni şifrenizi kimseyle paylaşmayın",
+
+    "page-not-found": "Sayfa bulunamadı",
+    "sorry": "Üzgünüz, aradığınız sayfayı bulamadık.",
+    "back-to-home": "Ana sayfaya dön",
+    "support": "Destek için iletişime geçin",
+
+    "comment-success": "Yorumunuz başarıyla eklendi! Teşekkürler",
+    "comment-failure": "Yorumunuz gönderilemedi. Lütfen tekrar deneyin.",
+
+    "field-is-required": "Bu alan zorunludur.",
+
+    "error": "Hata",
+    "fullname-valid": "Adınız ve soyadınız en az iki kelimeden oluşmalıdır.",
+    "username-valid": "Kullanıcı adınız sadece harf ve rakamlardan oluşmalıdır.",
+    "email-valid": "Geçerli bir e-posta adresi giriniz.",
+    "password-valid": "Parolanız en az sekiz karakter uzunluğunda olmalı ve en az bir harf, bir sayı ve bir özel karakter içermelidir.",
+
+    "is-passwords-same": "Şifreler eşleşmiyor. Lütfen şifrenizi ve şifre onayınızı tekrar girin.",
+
+    "terms-header": "Kullanıcı Hüküm ve Koşulları",
+    "terms-description": "Hoş geldiniz! Lütfen aşağıdaki hüküm ve koşulları dikkatlice okuyunuz. Bu belge, FullStack.com web sitesini ve tüm ilişkili hizmetleri kullanırken uymanız gereken koşulları belirtir.",
+    "terms-rule-1": "Kabul Edilme Koşulu: FullStack.com web sitesini ve hizmetlerini kullanarak, aşağıdaki hüküm ve koşulları tamamen anladığınızı ve kabul ettiğinizi beyan edersiniz.",
+    "terms-rule-2": "Hesap Oluşturma: FullStack.com hizmetlerini kullanabilmek için bir kullanıcı hesabı oluşturmalısınız. Hesap bilgilerinizin güvenliğinden siz sorumlusunuz. Hesap bilgilerinizin yetkisiz erişimden korunması için gerekli önlemleri almalısınız.",
+    "terms-rule-3": "Üye Yorumları: FullStack.com, sadece üye yorumlarına izin verir. Üye yorumları, fullstack.com tarafından kontrol edilmez ve fullstack.com tarafından onaylanmamıştır.",
+    "terms-rule-4": "Kullanım Şartları Değişiklikleri: FullStack.com, kullanım şartlarını zaman zaman değiştirme hakkını saklı tutar. Değişiklikler yayınlandığı anda yürürlüğe girecek ve kullanıcıları bağlayacaktır. Kullanıcılar, bu değişiklikleri düzenli olarak kontrol etmeli ve devam eden kullanımları, değişiklikleri kabul etme anlamına gelecektir.",
+    "terms-rule-5": "Gizlilik Politikası: FullStack.com'un gizlilik politikasını da dikkatlice okumanızı öneririz. Bu politika, kullanıcı bilgilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.",
+    "terms-rule-6": "Kullanım Şartlarına Uyum: FullStack.com'u kullanarak, yerel yasalara, düzenlemelere ve uluslararası anlaşmalara tam uyumlu olduğunuzu kabul edersiniz.",
+    "terms-rule-7": "İçerik Kullanımı: FullStack.com üzerinde paylaşılan içeriklere uygunsuz veya hukuka aykırı bir şekilde müdahale etmek yasaktır.",
+    "terms-rule-8": "Güvenlik Bilgilendirmesi: Hesap güvenliğiniz için şifrenizi kimseyle paylaşmamanız ve güçlü bir şifre kullanmanız önemlidir.",
+    "terms-rule-9": "Sözleşme Feshi: FullStack.com, ihlal durumunda önceden bildirimde bulunmaksızın hesapları askıya alma veya feshetme hakkını saklı tutar.",
+    "terms-rule-10": "Reklam ve Pazarlama: FullStack.com'un açık izni olmaksızın reklam veya pazarlama materyalleri paylaşmak yasaktır.",
+    "terms-rule-11": "İletişim: Hüküm ve koşullarımız hakkında herhangi bir sorunuz veya açıklamalarınız varsa, lütfen bizimle iletişime geçmekten çekinmeyin. İletişim için",
+    "click-here": "buraya tıklayın",
+    "terms-rule-12": "Destek: Kullanıcılarımızın herhangi bir teknik sorunları veya yardıma ihtiyaçları varsa, lütfen destek ekibimizle iletişime geçin",
+    "terms-footer": "Bu hüküm ve koşulları okuyarak ve kabul ederek, FullStack.com hizmetlerini kullanma konusundaki taahhüt ve sorumluluklarınızı anladığınızı kabul etmiş olursunuz.",
+    "terms-last-update": "Son güncelleme",
+
+    "privacy-header": "Gizlilik Politikası",
+    "privacy-description": "Hoş geldiniz! FullStack.com olarak, kullanıcı gizliliğine önem veriyor ve aşağıdaki gizlilik politikası ile kullanıcılarımızın verilerini nasıl işlediğimizi açıklıyoruz. ",
+    "privacy-rule-1": "Veri Toplama: FullStack.com, kullanıcı kaydı sırasında topladığı bilgilerle sınırlı olmak üzere temel kullanıcı verilerini toplayabilir. Bu bilgiler arasında ad, e-posta adresi ve tercihlere bağlı olarak bazı demografik bilgiler bulunabilir.",
+    "privacy-rule-2": "Veri Kullanımı: Kullanıcı verileri, kullanıcılara daha iyi bir hizmet sunabilmek, özelleştirilmiş içerik sağlamak, güvenliği artırmak ve kullanıcı deneyimini iyileştirmek amacıyla kullanılabilir.",
+    "privacy-rule-3": "Veri Paylaşımı: Kullanıcı verileri, yasal gerekliliklere uygun olarak veya kullanıcının açık rızası olmaksızın üçüncü taraflarla kesinlikle paylaşılmaz. Veriler, yalnızca belirtilen amaçlar doğrultusunda kullanılır.",
+    "privacy-rule-4": "Veri Güvenliği: FullStack.com, endüstri standardına uygun güvenlik önlemleri kullanarak kullanıcı verilerini korur. Veriler, yetkisiz erişime, değişikliğe veya ifşaya karşı korunur.",
+    "privacy-rule-5": "Çerezler: FullStack.com, çerezleri kullanarak kullanıcı deneyimini iyileştirmek ve hizmetleri sağlamak için bilgileri depolayabilir. Çerez kullanımı hakkında daha fazla bilgi için Çerez Politikamızı inceleyebilirsiniz.",
+    "privacy-rule-6": "Veri Güncelleme ve Silme: Kullanıcılar, kendi verilerini güncelleme ve silme talebinde bulunabilir. Bu konuda yardım veya bilgi almak için",
+    "privacy-rule-7": "Gizlilik Politikası Güncellemeleri: Gizlilik politikamız zaman zaman güncellenebilir. Değişiklikler, politikamızdaki 'Son Güncelleme' tarihinde yayınlandığı anda yürürlüğe girer.",
+    "privacy-rule-8": "İletişim: Gizlilik politikamızla ilgili sorularınız veya açıklamalarınız için lütfen bizimle iletişime geçin, iletişim için",
+    "privacy-footer": "Bu gizlilik politikasını okuyarak ve kabul ederek, FullStack.com'un veri kullanımına yönelik taahhüt ve sorumluluklarınızı anladığınızı kabul etmiş olursunuz.",
+    "privacy-last-update": "Son güncelleme"
+}

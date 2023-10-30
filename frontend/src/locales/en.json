@@ -1,0 +1,123 @@
+{
+    "web-development": "Web Development",
+    "trends": "Trends",
+    "developer-tools": "Developer Tools",
+    "discover": "Discover",
+    "contact": "Contact",
+
+    "sign-out": "Sign Out",
+
+    "resources": "Resources",
+    "follow-us": "Follow us",
+    "categories": "Categories",
+    "rights": "All Rights Reserved.",
+    "legal": "Legal",
+    "terms-conditions": "Terms & Conditions",
+    "privacy-policy": "Privacy Policy",
+
+    "latest-posts": "Latest Posts",
+
+    "read-more": "Read More",
+
+    "previous": "Previous",
+    "next": "Next",
+
+    "contact-us": "Contact Us",
+    "contact-desc": "Do you have a technical issue? Want to send feedback on a beta feature? Need details about our business plan? Let us know.",
+    "e-mail": "E-Mail",
+    "subject": "Subject",
+    "subject-placeholder": "Let us know how we can help you",
+    "message": "Your message",
+    "message-placeholder": "Leave a message...",
+    "send-message-btn": "Send Message",
+
+    "sign-up": "Become a member",
+    "fullname": "Fullname",
+    "username": "Username",
+    "password": "Password",
+    "profile-picture": "Profile Picture",
+    "terms": "I agree to the terms and conditions",
+    "register": "Register",
+    "already-member": "Already a member?",
+    "login": "Log In",
+
+    "login-to": "Login to ./fullstack",
+    "e-mail-placeholder": "example",
+    "remember-device": "Remember this device",
+    "forgot-password": "Forgot Password?",
+    "not-a-member-yet": "Not a member yet?",
+    "create-account": "Create Account",
+    "login-banner": "All about web development, trends and developer tools",
+    "join-community": "Join the developer community and share your knowledge.",
+
+    "register-banner": "Welcome to fullstack.com! By creating an account, you can access a wide range of content and join our community.",
+
+    "or": "or",
+    "send": "Send",
+    "comment-placeholder": "Leave comment...",
+
+    "no-comments-yet": "No comments yet.",
+    "be-the-first-to-comment": "Be the first to comment!",
+
+    "admin-login": "Login to admin panel",
+    "remember-me": "Remember me",
+
+    "reset-your-password": "Reset your password with your email",
+    "send-reset-link": "Send reset link",
+    "reset-password-banner": "Enter your email and we will send you a link so you can access your account again.",
+
+    "new-password": "Enter your new password",
+    "confirm-password": "Confirm password",
+    "save": "Save",
+    "new-password-banner": "Choose a strong password for your security",
+    "new-password-info": "Do not share your new password with anyone",
+
+    "page-not-found": "Page not found",
+    "sorry": "Sorry, we couldn't find the page you were looking for.",
+    "back-to-home": "Back to home page",
+    "support": "Contact for support",
+
+    "comment-success": "Your comment has been successfully added! Thank you",
+    "comment-failure": "Your comment could not be sent. Please try again.",
+
+    "field-is-required": "This field is required.",
+
+    "error": "Error",
+    "fullname-valid": "Your name and surname must consist of at least two words.",
+    "username-valid": "Your username should only consist of letters and numbers.",
+    "email-valid": "Enter a valid e-mail address.",
+    "password-valid": "Your password must be at least eight characters long and contain at least one letter, one number and one special character.",
+
+    "is-passwords-same": "The passwords do not match. Please enter your password and password confirmation again.",
+
+    "terms-header": "User Terms and Conditions",
+    "terms-description": "Welcome! Please read the following terms and conditions carefully. This document sets out the terms and conditions that you must abide by when using the FullStack.com website and all associated services.",
+    "terms-rule-1": "Acceptance Condition: By using the FullStack.com website and services, you declare that you fully understand and accept the following terms and conditions.",
+    "terms-rule-2": "Account Creation: You must create a user account to use FullStack.com services. You are responsible for the security of your account information. You must take the necessary precautions to protect your account information from unauthorised access.",
+    "terms-rule-3": "Member Comments: FullStack.com only allows member comments. Member comments are not controlled by fullstack.com and have not been approved by fullstack.com.",
+    "terms-rule-4": "Terms of Use Changes: FullStack.com reserves the right to change the terms of use from time to time. Changes will take effect as soon as they are published and will bind users. Users should check these changes regularly and their continued use will constitute acceptance of the changes.",
+    "terms-rule-5": "Privacy Policy: We also encourage you to carefully read FullStack.com's privacy policy. This policy explains how user information is collected, used and protected.",
+    "terms-rule-6": "Compliance with Terms of Use: By using FullStack.com, you agree to be in full compliance with local laws, regulations and international treaties.",
+    "terms-rule-7": "Content Usage: It is forbidden to interfere with the content shared on FullStack.com in an inappropriate or unlawful manner.",
+    "terms-rule-8": "Security Information: For your account security, it is important that you do not share your password with anyone and use a strong password.",
+    "terms-rule-9": "Contract Termination: FullStack.com reserves the right to suspend or terminate accounts without prior notice in case of violation.",
+    "terms-rule-10": "Advertising and Marketing: It is prohibited to post advertising or marketing materials without the express permission of FullStack.com.",
+    "terms-rule-11": "Contact us: If you have any questions or clarifications about our terms and conditions, please feel free to contact us. For contact",
+    "click-here": "click here",
+    "terms-rule-12": "Support: If our users have any technical issues or need assistance, please contact our support team",
+    "terms-footer": "By reading and accepting these terms and conditions, you acknowledge that you understand your commitments and responsibilities in using FullStack.com services.",
+    "terms-last-update": "Last update",
+
+    "privacy-header": "Privacy Policy",
+    "privacy-description": "Welcome! As FullStack.com, we care about user privacy and explain how we process our users' data with the following privacy policy.",
+    "privacy-rule-1": "Data Collection: FullStack.com may collect basic user data, limited to information collected during user registration. This information may include name, e-mail address and some demographic information depending on preferences.",
+    "privacy-rule-2": "Data Usage: User data may be used to provide a better service to users, to provide customised content, to increase security and to improve the user experience.",
+    "privacy-rule-3": "Data Sharing: User data is never shared with third parties in accordance with legal requirements or without the express consent of the user. The data is used only for the specified purposes.",
+    "privacy-rule-4": "Data Security: FullStack.com protects user data using industry-standard security measures. Data is protected against unauthorised access, modification or disclosure.",
+    "privacy-rule-5": "Cookies: FullStack.com may store information to improve user experience and provide services by using cookies. For more information about the use of cookies, you can review our Cookie Policy.",
+    "privacy-rule-6": "Data Update and Deletion: Users can request to update and delete their own data. For help or information on this subject",
+    "privacy-rule-7": "Privacy Policy Updates: Our privacy policy may be updated from time to time. Changes take effect as soon as they are published on the 'Last Updated' date in our policy.",
+    "privacy-rule-8": "Contact us: For questions or clarifications regarding our privacy policy, please contact us, for contact",
+    "privacy-footer": "By reading and accepting this privacy policy, you acknowledge that you understand FullStack.com's commitments and responsibilities regarding the use of data.",
+    "privacy-last-update": "Last update"
+}
