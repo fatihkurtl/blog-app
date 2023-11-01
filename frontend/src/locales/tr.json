@@ -119,5 +119,27 @@
     "privacy-rule-7": "Gizlilik Politikası Güncellemeleri: Gizlilik politikamız zaman zaman güncellenebilir. Değişiklikler, politikamızdaki 'Son Güncelleme' tarihinde yayınlandığı anda yürürlüğe girer.",
     "privacy-rule-8": "İletişim: Gizlilik politikamızla ilgili sorularınız veya açıklamalarınız için lütfen bizimle iletişime geçin, iletişim için",
     "privacy-footer": "Bu gizlilik politikasını okuyarak ve kabul ederek, FullStack.com'un veri kullanımına yönelik taahhüt ve sorumluluklarınızı anladığınızı kabul etmiş olursunuz.",
-    "privacy-last-update": "Son güncelleme"
+    "privacy-last-update": "Son güncelleme",
+
+    "profile": "Profil",
+    "customization": "Özelleştirme",
+    "account": "Hesap",
+
+    "member": "Üye",
+    "display-email": "Profilde e-postayı görüntüle",
+    "basic": "Temel",
+    "location": "Konum",
+    "location-placeholder": "TR, IST",
+    "bio": "Biyografi",
+    "bio-placeholder": "Kısa bir biyografi...",
+    "save-profile-btn": "Profil Bilgilerini Kaydet",
+
+    "appearance": "Görünüş",
+    "site-theme": "Site Teması",
+    "light-theme": "Aydınlık Tema",
+    "dark-theme": "Karanlık Tema",
+    "localization": "Yerelleştirme",
+    "site-language": "Site Dili",
+    "turkish": "Türkçe",
+    "english": "İngilizce"
 }

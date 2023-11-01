@@ -152,7 +152,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.fullName" v-model="memberData.fullName"
                                 v-validate="ValidationRules.fullName" type="text" id="fullName" name="fullName"
                                 :placeholder="$t('fullname')"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.fullName" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.fullName }} -->
                                 {{ $t('field-is-required') }}
@@ -169,7 +169,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.userName" v-model="memberData.userName"
                                 v-validate="ValidationRules.userName" type="text" id="userName" name="userName"
                                 :placeholder="$t('username')"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.userName" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.userName }} -->
                                 {{ $t('field-is-required') }}
@@ -183,9 +183,9 @@ const uploadProfilePhoto = (e) => {
                             <label for="email"
                                 class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">{{
                                     $t('e-mail') }}</label>
-                            <input maxlength="60" v-model="memberData.email" v-validate="ValidationRules.email" type="email"
-                                id="email" name="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            <input :maxlength="characterLimits.email" v-model="memberData.email"
+                                v-validate="ValidationRules.email" type="email" id="email" name="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 :placeholder="$t('e-mail')">
                             <span v-if="errors.email" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.email }} -->
@@ -203,7 +203,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.password" v-model="memberData.password"
                                 v-validate="ValidationRules.password" type="password" id="password" name="password"
                                 placeholder="•••••••••"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.password" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.password }} -->
                                 {{ $t('field-is-required') }}
@@ -218,8 +218,8 @@ const uploadProfilePhoto = (e) => {
                                 class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">
                                 {{ $t('profile-picture') }}
                             </label>
-                            <input @change="uploadProfilePhoto" accept="image" max-file-size="3mb" file-upload
-                                class="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                            <input @change="uploadProfilePhoto" accept="image/*" max-file-size="3mb" file-upload
+                                class="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
                                 id="profilePhoto" type="file">
                             <p :class="[photoErrorsObject.isActive === true ? photoErrorsObject : 'mt-1 text-sm font-sans text-gray-500 dark:text-white']"
                                 id="file_input_help">

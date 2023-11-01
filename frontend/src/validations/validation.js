@@ -19,6 +19,6 @@ export const formValidation = reactive({
 
 export const characterLimits = reactive({
     fullName: 60,
-    userName: 20,
+    userName: 80,
     password: 50,
 })

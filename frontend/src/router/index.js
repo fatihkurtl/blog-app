@@ -14,6 +14,9 @@ import MemberLogin from "../views/members/Login.vue";
 import ResetPassword from "../views/members/ResetPassword.vue";
 // ! Auth
 import NewPassword from "../views/members/auth/NewPassword.vue";
+import Profile from "../views/members/auth/settings/Profile.vue";
+import Customization from "../views/members/auth/settings/Customization.vue";
+import Account from "../views/members/auth/settings/Account.vue";
 // ! Admin Routes
 import Login from "../views/admin/Login.vue";
 // ! 404
@@ -96,10 +99,27 @@ const router = createRouter({
       component: Page404
     },
     {
-      path: "/auth/new_password/member=:member_token",
-      name: "New Password",
+      path: "/new_password/member=:member_token",
+      name: "Auth New Password",
       component: NewPassword
     },
+    // * MEMBER SETTINGS PAGES
+    {
+      path: "/settings/profile/member=:token",
+      name: "Auth Profile Settings",
+      component: Profile
+    },
+    {
+      path: "/settings/customization/member=:token",
+      name: "Auth Customization Settings",
+      component: Customization
+    },
+    {
+      path: "/settings/account/member=:token",
+      name: "Auth Account Settings",
+      component: Account
+    },
+    // * MEMBER SETTINGS PAGES
     {
       path: "/auth/login",
       name: "Admin Login",

@@ -34,7 +34,7 @@ onClickOutside(userDropdown, (event) => {
 
 <template>
     <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink class="text-black dark:text-white" to="/">Home</RouterLink>
     </nav>
 
     <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor">
@@ -49,10 +49,9 @@ onClickOutside(userDropdown, (event) => {
                 <!-- User -->
 
                 <!-- LANGUAGE -->
-                <div class="flex flex-row items-center right-1 ml-4">
+                <!-- <div class="flex flex-row items-center right-1 ml-4">
                     <a @click="language.setLang('TR')"
                         class="inline-flex items-center font-medium justify-center mx-1 text-sm text-gray-900 dark:text-white cursor-pointer">
-                        <!-- <span class="text-md dark:text-white">Tr</span> -->
                         <span class="items-center">
                             <img src="/src/assets/icons/tr.png"
                                 class="w-6 h-6 border border-transparent hover:border-black dark:hover:border-white rounded-full transition duration-300 ease-in-out" />
@@ -60,17 +59,16 @@ onClickOutside(userDropdown, (event) => {
                     </a>
                     <a @click="language.setLang('EN')"
                         class="inline-flex items-center font-medium justify-center mx-1 text-sm text-gray-900 dark:text-white cursor-pointer">
-                        <!-- <span class="text-md dark:text-white">En</span> -->
                         <span class="items-center">
                             <img src="/src/assets/icons/en.png"
                                 class="w-6 h-6 border border-transparent hover:border-black dark:hover:border-white rounded-full transition duration-300 ease-in-out" />
                         </span>
                     </a>
-                </div>
+                </div> -->
                 <!-- LANGUAGE -->
-                
+
                 <!-- DARK & LIGHT MODE -->
-                <div class="flex flex-row items-center right-1 ml-4">
+                <!-- <div class="flex flex-row items-center right-1 ml-4">
                     <a @click="theme.toggleDark()"
                         class="inline-flex items-center font-medium justify-center mx-1 text-sm text-gray-900 dark:text-white cursor-pointer">
                         <span class="items-center">
@@ -90,17 +88,7 @@ onClickOutside(userDropdown, (event) => {
                             </svg>
                         </span>
                     </a>
-                    <!-- <a @click="$i18n.locale = `EN`"
-                        class="inline-flex items-center font-medium justify-center mx-1 text-sm text-gray-900 dark:text-white cursor-pointer">
-                        <span class="items-center">
-                            <svg class="w-5 h-5 text-gray-800 dark:text-white dark:hover:text-amber-500" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                                <path
-                                    d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z" />
-                            </svg>
-                        </span>
-                    </a> -->
-                </div>
+                </div> -->
                 <!-- DARK & LIGHT MODE -->
                 <div class="relative inline-block text-left">
 
@@ -127,8 +115,9 @@ onClickOutside(userDropdown, (event) => {
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Dashboard</a>
                                 </li>
                                 <li class="py-1 px-1">
-                                    <a href="#"
-                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Settings</a>
+                                    <RouterLink to="/settings/profile/member=:token"
+                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
+                                        Settings</RouterLink>
                                 </li>
                                 <li class="py-1 px-1">
                                     <a href="#"

@@ -149,6 +149,6 @@
             </span>            
         </div>
     </footer> -->
-<h1>Footer</h1></template>
+<h1 class="text-black dark:text-white">Footer</h1></template>
 
 <style scoped></style>

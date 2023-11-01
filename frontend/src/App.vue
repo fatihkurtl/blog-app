@@ -12,7 +12,7 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
 </script>
 
 <template>
-  <div class="container mx-auto px-4 md:container md:mx-auto dark:bg-darkBgColor">
+  <div class="container min-h-screen min-w-full mx-auto px-4 md:container md:mx-auto dark:bg-darkBgColor">
     <header>
       <Navbar />
     </header>

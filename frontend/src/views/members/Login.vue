@@ -18,25 +18,27 @@
                     <h2 class="text-2xl font-bold text-gray-600 dark:text-white">
                         {{ $t('login-to') }}
                     </h2>
-                    <form class="mt-8 space-y-6" action="#">
+                    <form class="mt-8 space-y-6" method="POST" enctype="multipart/form-data">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-sans font-semibold text-gray-600 dark:text-white">{{
-                                $t('e-mail') }}</label>
+                            <label for="email"
+                                class="block mb-2 text-sm font-sans font-semibold text-gray-600 dark:text-white">{{
+                                    $t('e-mail') }}</label>
                             <input type="email" name="email" id="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 :placeholder="$t('e-mail-placeholder') + '@gmail.com'" required="">
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-sans font-semibold text-gray-600 dark:text-white">{{
-                                $t('password') }}</label>
+                            <label for="password"
+                                class="block mb-2 text-sm font-sans font-semibold text-gray-600 dark:text-white">{{
+                                    $t('password') }}</label>
                             <input type="password" name="password" id="password" placeholder="••••••••"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 required>
                         </div>
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
                                 <input id="remember" aria-describedby="remember" name="remember" type="checkbox"
-                                    class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
+                                    class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-black dark:border-gray-600"
                                     required>
                             </div>
                             <div class="ml-3 text-sm">

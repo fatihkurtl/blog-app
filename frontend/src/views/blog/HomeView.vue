@@ -5,7 +5,7 @@ import Pagination from '../../layouts/Pagination.vue';
 </script>
 
 <template>
-    <main class="container mx-auto mt-4 px-4 lg:px-0">
+    <main class="container mx-auto mt-4 lg:px-0 min-w-full"> <!-- px-4 -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Blog Posts -->
 

@@ -119,5 +119,27 @@
     "privacy-rule-7": "Privacy Policy Updates: Our privacy policy may be updated from time to time. Changes take effect as soon as they are published on the 'Last Updated' date in our policy.",
     "privacy-rule-8": "Contact us: For questions or clarifications regarding our privacy policy, please contact us, for contact",
     "privacy-footer": "By reading and accepting this privacy policy, you acknowledge that you understand FullStack.com's commitments and responsibilities regarding the use of data.",
-    "privacy-last-update": "Last update"
+    "privacy-last-update": "Last update",
+
+    "profile": "Profile",
+    "customization": "Customization",
+    "account": "Account",
+
+    "member": "Member",
+    "display-email": "Display email on profile",
+    "basic": "Basic",
+    "location": "Location",
+    "location-placeholder": "USA, NY",
+    "bio": "Bio",
+    "bio-placeholder": "A short bio...",
+    "save-profile-btn": "Save Profile Information",
+
+    "appearance": "Appearance",
+    "site-theme": "Site Theme",
+    "light-theme": "Light Theme",
+    "dark-theme": "Dark Theme",
+    "localization": "Localization",
+    "site-language": "Site Language",
+    "turkish": "Turkish",
+    "english": "English"
 }

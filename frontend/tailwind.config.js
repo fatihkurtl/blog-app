@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         darkBgColor: {
-          DEFAULT: "#2F3031",
+          DEFAULT: "#000000", //#2F3031
         },
         darkItemsColor: {
           DEFAULT: "#18191a",
