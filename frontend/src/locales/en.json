@@ -141,5 +141,17 @@
     "localization": "Localization",
     "site-language": "Site Language",
     "turkish": "Turkish",
-    "english": "English"
+    "english": "English",
+
+    "set-new-password": "Set new password",
+    "current-password": "Current password",
+    "confirm-new-password": "Confirm new password",
+    "account-emails": "Account emails",
+    "primary-email": "Primary email",
+    "danger-zone": "Danger Zone",
+    "delete-account-header": "Deleting your account will:",
+    "delete-account-desc": "Delete your profile, along with your authentication associations. This does not include applications permissions. You will have to remove them yourself:",
+    "delete-account-desc2": "Delete any and all content you have, such as articles, comments, or your reading list. Allow your username to become available to anyone.",
+    "delete-account": "Delete Account",
+    "any-questions": "Contact if you have any questions."
 }

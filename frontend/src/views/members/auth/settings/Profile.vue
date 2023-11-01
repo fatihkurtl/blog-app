@@ -1,6 +1,20 @@
 <script setup>
+import { ref } from 'vue';
 import Aside from '../../../../components/members/auth/Aside.vue';
 
+
+const profilePhoto = ref();
+
+const selectPhoto = (e) => {
+    const file = e.target.files[0];
+    if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            profilePhoto.value = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
 
 </script>
 
@@ -13,7 +27,7 @@ import Aside from '../../../../components/members/auth/Aside.vue';
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6 flex flex-col md:flex-row">
                     <div class="w-full p-4 md:w-2/3 lg:mx-4 lg:my-4 md:mx-4 md:my-4 sm:mx-1 sm:my-1">
                         <h2 class="text-xl md:text-2xl font-sans font-semibold text-gray-600 dark:text-white mb-2">
-                            {{ $t('member') }} - 
+                            {{ $t('member') }} -
                             <span class="text-sky-600 dark:text-sky-600">@username</span>
                         </h2>
                         <div>
@@ -48,9 +62,9 @@ import Aside from '../../../../components/members/auth/Aside.vue';
                                     {{ $t('profile-picture') }}
                                 </label>
                                 <div class="flex items-center mb-4">
-                                    <img src="https://via.placeholder.com/64" alt="User Avatar"
-                                        class="w-10 h-10 rounded-full mr-4">
-                                    <input @change="" accept="image/*" max-file-size="3mb" file-upload
+                                    <img :src="profilePhoto ? profilePhoto : 'https://via.placeholder.com/64'"
+                                        alt="User Avatar" class="w-14 h-14 rounded-full mr-4">
+                                    <input @change="selectPhoto" accept="image/*" max-file-size="3mb" file-upload
                                         class="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
                                         id="profilePhoto" type="file">
                                     <!-- <p :class="[photoErrorsObject.isActive === true ? photoErrorsObject : 'mt-1 text-sm font-sans text-gray-500 dark:text-white']"

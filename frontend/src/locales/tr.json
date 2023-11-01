@@ -141,5 +141,17 @@
     "localization": "Yerelleştirme",
     "site-language": "Site Dili",
     "turkish": "Türkçe",
-    "english": "İngilizce"
+    "english": "İngilizce",
+
+    "set-new-password": "Yeni şifre belirle",
+    "current-password": "Güncel şifre",
+    "confirm-new-password": "Yeni şifreyi onayla",
+    "account-emails": "Hesap epostaları",
+    "primary-email": "Birincil eposta",
+    "danger-zone": "Tehlikeli Bölge",
+    "delete-account-header": "Hesabınızı silmek aşağıdakileri yapacaktır:",
+    "delete-account-desc": "Profilinizi kimlik doğrulama ilişkilendirmelerinizle birlikte siler. Bu, uygulama izinlerini içermez. Bunları kendiniz kaldırmanız gerekecektir:",
+    "delete-account-desc2": "Makaleler, yorumlar veya okuma listeniz gibi sahip olduğunuz tüm içerikler silinir. Kullanıcı adınızın herkes tarafından kullanılabilir olmasına izin verin.",
+    "delete-account": "Hesabı Sil",
+    "any-questions": "Herhangi bir sorunuz varsa iletişime geçin."
 }
