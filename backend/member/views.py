@@ -65,6 +65,63 @@ def login(request):
     return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
+@api_view(['PUT'])
+def profile_update(request, username, pk):
+    try:
+        member = MEMBER.objects.filter(pk=pk).first()
+        if member != None:
+            if request.headers['Token'] == member.tokenData:
+                member.fullName = request.data.get('fullName', member.fullName)
+                member.email = request.data.get('email', member.email)
+                member.profilePhoto = request.data.get('profilePhoto', member.profilePhoto)
+                member.location = request.data.get('location', member.location)
+                member.bio = request.data.get('bio', member.bio)
+                member.save()
+                return Response({'message': 'Update Successful', 'status': status.HTTP_202_ACCEPTED}, status.HTTP_202_ACCEPTED)
+            else:
+                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
+        return Response({'message': 'User Not Found', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
+    except MEMBER.DoesNotExist:
+        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['DELETE'])
+def delete_member(request, username, pk):
+    try:
+        member = MEMBER.objects.filter(pk=pk).first()
+        if member != None:
+            if request.headers['Token'] == member.tokenData:
+                member.delete()
+                return Response({'message': 'User deleted', 'status': status.HTTP_200_OK}, status.HTTP_200_OK)
+            else:
+                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
+        return Response({'message': 'User Not Found', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
+    except MEMBER.DoesNotExist:
+        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['PUT'])
+def set_password(request, username, pk):
+    try: 
+        member = MEMBER.objects.filter(pk=pk).first()
+        if member != None:
+            if request.headers['Token'] == member.tokenData:
+                decodedPassword = jwt.decode(member.password, KEY, algorithms=['HS256'])
+                if request.data['currentPassword'] == decodedPassword['password']:
+                    encodedPassword = jwt.encode({'password': request.data['password']}, KEY, algorithm = 'HS256')
+                    member.password = encodedPassword
+                    member.save()
+                    return Response({'message': 'Password Changed Successful', 'status': status.HTTP_200_OK}, status.HTTP_200_OK)
+                else:
+                    return Response({'message': 'Old Password Wrong', 'status': status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+            else:
+                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
+        else:
+            return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+    except MEMBER.DoesNotExist:
+        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+
+
 @api_view(['POST'])
 def reset_password(request):
     try:

@@ -37,7 +37,7 @@ class POST(models.Model):
     title = models.CharField(max_length=60, null=False, unique=True)
     subTitle = models.CharField(max_length=255, null=False)
     postImage = models.ImageField(upload_to='posts/', blank=True, null=True)
-    readingTime = models.IntegerField()
+    readingTime = models.PositiveIntegerField()
     category = models.CharField(max_length=25, choices=CATEGORIES)
     mdContent = MDTextField(null=False, blank=True)
     

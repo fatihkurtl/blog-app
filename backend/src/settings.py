@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'rest_framework.authtoken',
+    'django_cleanup.apps.CleanupConfig',
     'mdeditor',
     'blog',
     'contact',
@@ -158,6 +159,8 @@ WSGI_APPLICATION = 'src.wsgi.application'
 #         'PORT': os.environ.get('DATABASE_PORT'),
 #     }
 # }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -168,6 +171,17 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': '2410',
+#         'HOST': 'db',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation

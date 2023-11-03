@@ -6,7 +6,10 @@ class MEMBER(models.Model):
     profilePhoto = models.ImageField(upload_to='members/', blank=True, null=True)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=255)
-    tokenData = models.CharField(max_length=255, null=True)
+    tokenData = models.CharField(max_length=255, null=True, blank=True)
+    
+    location = models.CharField(max_length=100, null=True, blank=True)
+    bio = models.CharField(max_length=200, null=True, blank=True)
     
     is_active = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
