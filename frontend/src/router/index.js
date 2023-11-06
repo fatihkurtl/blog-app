@@ -106,23 +106,23 @@ const router = createRouter({
       component: Page404,
     },
     {
-      path: "/new-password/member=:member_token",
+      path: "/new-password/member=:member-token",
       name: "Auth New Password",
       component: NewPassword,
     },
     // * MEMBER SETTINGS PAGES
     {
-      path: "/settings/profile/member=:member_token",
+      path: "/settings/profile/member=:member-token",
       name: "Auth Profile Settings",
       component: Profile,
     },
     {
-      path: "/settings/customization/member=:member_token",
+      path: "/settings/customization/member=:member-token",
       name: "Auth Customization Settings",
       component: Customization,
     },
     {
-      path: "/settings/account/member=:member_token",
+      path: "/settings/account/member=:member-token",
       name: "Auth Account Settings",
       component: Account,
     },
