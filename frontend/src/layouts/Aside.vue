@@ -8,13 +8,13 @@
             <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{$t('latest-posts')}}</h3>
             <ul>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
+                    <RouterLink to="/post-detail-1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
                 </li>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
+                    <RouterLink to="/post-detail-2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
                 </li>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
+                    <RouterLink to="/post-detail-3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
@@ -22,13 +22,13 @@
             <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{$t('trends')}}</h3>
             <ul>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
+                    <RouterLink to="/trends/post-detail-1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
                 </li>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
+                    <RouterLink to="/trends/post-detail-2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
                 </li>
                 <li class="mb-2">
-                    <RouterLink to="/post_detail/3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
+                    <RouterLink to="/trends/post-detail-3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>

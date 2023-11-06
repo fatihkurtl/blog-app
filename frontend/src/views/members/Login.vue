@@ -45,7 +45,7 @@
                                 <label for="remember" class="font-sans font-medium text-gray-500 dark:text-gray-400">
                                     {{ $t('remember-device') }}</label>
                             </div>
-                            <RouterLink to="/reset_password"
+                            <RouterLink to="/reset-password"
                                 class="ml-auto text-sm font-sans font-medium text-blue-600 hover:underline dark:text-blue-500">
                                 {{ $t('forgot-password') }}</RouterLink>
                         </div>

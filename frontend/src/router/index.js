@@ -34,7 +34,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/web_dev",
+      path: "/web-development",
       name: "Web Dev",
       component: WebDevView,
     },
@@ -44,7 +44,7 @@ const router = createRouter({
       component: TrendsView,
     },
     {
-      path: "/dev_tools",
+      path: "/developer-tools",
       name: "Dev Tools",
       component: DevToolsView,
     },
@@ -54,15 +54,22 @@ const router = createRouter({
       component: DiscoverView,
     },
     {
-      path: "/post_detail/:id",
-      name: "Post Detail",
-      component: PostDetail,
+      path: "",
+      children: [
+        { path: ":slug", component: PostDetail },
+        { path: ":category/:slug", component: CategoryDetail },
+      ],
     },
-    {
-      path: "/post_detail/:category/:id",
-      name: "Post Category Detail",
-      component: CategoryDetail,
-    },
+    // {
+    //   path: "/:id",
+    //   name: "Post Detail",
+    //   component: PostDetail,
+    // },
+    // {
+    //   path: "/:category/:id",
+    //   name: "Post Category Detail",
+    //   component: CategoryDetail,
+    // },
     {
       path: "/contact",
       name: "Contact",
@@ -89,35 +96,35 @@ const router = createRouter({
       component: Privacy,
     },
     {
-      path: "/reset_password",
+      path: "/reset-password",
       name: "Reset Password",
-      component: ResetPassword
+      component: ResetPassword,
     },
     {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
-      component: Page404
+      component: Page404,
     },
     {
-      path: "/new_password/member=:member_token",
+      path: "/new-password/member=:member_token",
       name: "Auth New Password",
-      component: NewPassword
+      component: NewPassword,
     },
     // * MEMBER SETTINGS PAGES
     {
-      path: "/settings/profile/member=:token",
+      path: "/settings/profile/member=:member_token",
       name: "Auth Profile Settings",
-      component: Profile
+      component: Profile,
     },
     {
-      path: "/settings/customization/member=:token",
+      path: "/settings/customization/member=:member_token",
       name: "Auth Customization Settings",
-      component: Customization
+      component: Customization,
     },
     {
-      path: "/settings/account/member=:token",
+      path: "/settings/account/member=:member_token",
       name: "Auth Account Settings",
-      component: Account
+      component: Account,
     },
     // * MEMBER SETTINGS PAGES
     {

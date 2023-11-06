@@ -7,7 +7,7 @@
         <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4">
             <ul class="space-y-2 font-medium">
                 <li>
-                    <RouterLink to="/settings/profile/member=:token" active-class="dark:bg-blue-950 bg-gray-200"
+                    <RouterLink to="/settings/profile/member=:member_token" active-class="dark:bg-blue-950 bg-gray-200"
                         class="flex items-center p-2 rounded-lg text-black hover:bg-gray-200 hover:text-sky-600 dark:text-white dark:hover:text-sky-600 dark:hover:bg-gray-800 group">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             role="img" aria-labelledby="acf4sslz9gfeplwkgy9j4dox1rrcjbt8"
@@ -23,7 +23,7 @@
                     </RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/settings/customization/member=:token" active-class="dark:bg-blue-950 bg-gray-200"
+                    <RouterLink to="/settings/customization/member=:member_token" active-class="dark:bg-blue-950 bg-gray-200"
                         class="flex items-center p-2 rounded-lg text-black hover:bg-gray-200 hover:text-sky-600 dark:text-white dark:hover:text-sky-600 dark:hover:bg-gray-800 group">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             role="img" aria-labelledby="a77tj5o8x59qs6pynbhgm165askxcyra"
@@ -37,7 +37,7 @@
                     </RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/settings/account/member=:token" active-class="dark:bg-blue-950 bg-gray-200"
+                    <RouterLink to="/settings/account/member=:member_token" active-class="dark:bg-blue-950 bg-gray-200"
                         class="flex items-center p-2 rounded-lg text-black hover:bg-gray-200 hover:text-sky-600 dark:text-white dark:hover:text-sky-600 dark:hover:bg-gray-800 group">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             role="img" aria-labelledby="a9xmhsvar8uvx0bo22cwkriqdzlyhp3s"

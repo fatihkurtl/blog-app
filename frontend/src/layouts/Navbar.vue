@@ -115,9 +115,10 @@ onClickOutside(userDropdown, (event) => {
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Dashboard</a>
                                 </li>
                                 <li class="py-1 px-1">
-                                    <RouterLink to="/settings/profile/member=:token"
+                                    <RouterLink to="/settings/profile/member=:member_token"
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                                        Settings</RouterLink>
+                                        {{ $t('settings') }}
+                                        </RouterLink>
                                 </li>
                                 <li class="py-1 px-1">
                                     <a href="#"
@@ -171,7 +172,7 @@ onClickOutside(userDropdown, (event) => {
                 <ul
                     class="flex flex-col font-sans font-bold p-4 md:p-0 mt-4 border border-borderColor rounded-lg bg-lightItemsColor md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-lightItemsColor dark:bg-darkItemsColor md:dark:bg-darkItemsColor dark:border-borderColor">
                     <li>
-                        <RouterLink to="/web_dev" active-class="dark:bg-blue-950 bg-gray-200"
+                        <RouterLink to="/web-development" active-class="dark:bg-blue-950 bg-gray-200"
                             class="inline-flex items-center font-sans font-semibold justify-center px-2 py-2 text-base text-black hover:text-sky-600 hover:underline dark:text-white rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:text-sky-600"
                             aria-current="page">{{ $t('web-development') }}</RouterLink>
                     </li>
@@ -182,7 +183,7 @@ onClickOutside(userDropdown, (event) => {
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/dev_tools" active-class="dark:bg-blue-950 bg-gray-200"
+                        <RouterLink to="/developer-tools" active-class="dark:bg-blue-950 bg-gray-200"
                             class="inline-flex items-center font-sans font-semibold justify-center px-2 py-2 text-base text-black hover:text-sky-600 hover:underline dark:text-white rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:text-sky-600">
                             {{ $t('developer-tools') }}
                         </RouterLink>

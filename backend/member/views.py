@@ -134,7 +134,7 @@ def reset_password(request):
             message = f"""
                 Dear {serializer.data['fullName']} - ({serializer.data['email']}),\n
                 Click on the link below to securely reset your password:\n
-                http://localhost:5173/auth/new_password/member={serializer.data['tokenData']}\n
+                http://localhost:5173/auth/new-password/member={serializer.data['tokenData']}\n
                 Please do not share this link with others and keep your new password safe.\n
                 Sincerely,
                 fullstack.com team

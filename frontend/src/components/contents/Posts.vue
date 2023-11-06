@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
+console.log(route.fullPath);
 </script>
 
 <template>
@@ -15,7 +16,7 @@ const route = useRoute();
                 <p class="text-gray-800 font-sans dark:text-gray-300 mb-2">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit. Vivamus quis porta dui. Ut eu iaculis massa.</p>
-                <RouterLink :to="(route.fullPath === '/') ? '/post_detail/1' : '/post_detail' + route.fullPath + '/1'"
+                <RouterLink :to="(route.fullPath === '/') ? '/blog-post-1' : route.fullPath + '/blog-post-1'"
                     class="text-blue-500 hover:underline">{{ $t('read-more') }}</RouterLink>
             </div>
         </div>
@@ -30,7 +31,8 @@ const route = useRoute();
                 <p class="text-gray-800 font-sans dark:text-gray-300 mb-2">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit. Vivamus quis porta dui. Ut eu iaculis massa.</p>
-                <RouterLink :to="(route.fullPath === '/') ? '/post_detail/2' : '/post_detail' + route.fullPath + '/2'" class="text-blue-500 hover:underline">{{ $t('read-more') }}</RouterLink>
+                <RouterLink :to="(route.fullPath === '/') ? '/blog-post-2' : route.fullPath + '/blog-post-2'"
+                    class="text-blue-500 hover:underline">{{ $t('read-more') }}</RouterLink>
             </div>
         </div>
 
@@ -44,7 +46,8 @@ const route = useRoute();
                 <p class="text-gray-800 font-sans dark:text-gray-300 mb-2">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit. Vivamus quis porta dui. Ut eu iaculis massa.</p>
-                <RouterLink :to="(route.fullPath === '/') ? '/post_detail/3' : '/post_detail' + route.fullPath + '/3'" class="text-blue-500 hover:underline">{{ $t('read-more') }}</RouterLink>
+                <RouterLink :to="(route.fullPath === '/') ? '/blog-post-3' : route.fullPath + '/blog-post-3'"
+                    class="text-blue-500 hover:underline">{{ $t('read-more') }}</RouterLink>
             </div>
         </div>
     </div>
