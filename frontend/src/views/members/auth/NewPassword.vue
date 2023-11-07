@@ -142,7 +142,7 @@ watch(newPassword, (newValue) => {
                             </p>
                         </div>
                         <button type="submit"
-                            class="w-full px-5 py-3 text-base font-sans font-medium text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
+                            class="w-full px-5 py-3 text-base font-sans font-semibold text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
                             {{ $t('save') }}
                         </button>
                     </form>

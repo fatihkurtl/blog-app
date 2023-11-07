@@ -37,7 +37,7 @@ const selectPhoto = (e) => {
                                     {{ $t('fullname') }}
                                 </label>
                                 <input type="text" id="fullName" name="fullName" :placeholder="$t('fullname')"
-                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="mt-4">
                                 <label for="email"
@@ -45,7 +45,7 @@ const selectPhoto = (e) => {
                                         $t('e-mail') }}
                                 </label>
                                 <input type="text" id="fullName" name="fullName" :placeholder="$t('e-mail')"
-                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="mt-4">
                                 <div class="flex items-center h-5">
@@ -65,7 +65,7 @@ const selectPhoto = (e) => {
                                     <img :src="profilePhoto ? profilePhoto : 'https://via.placeholder.com/64'"
                                         alt="User Avatar" class="w-14 h-14 rounded-full mr-4">
                                     <input @change="selectPhoto" accept="image/*" max-file-size="3mb" file-upload
-                                        class="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
+                                        class="block w-full text-sm font-sans font-semibold text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
                                         id="profilePhoto" type="file">
                                     <!-- <p :class="[photoErrorsObject.isActive === true ? photoErrorsObject : 'mt-1 text-sm font-sans text-gray-500 dark:text-white']"
                                         id="file_input_help">
@@ -90,7 +90,7 @@ const selectPhoto = (e) => {
                                     {{ $t('location') }}
                                 </label>
                                 <input type="text" id="location" name="location" :placeholder="$t('location-placeholder')"
-                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
                             <div class="mt-4">
                                 <label for="bio"
@@ -98,7 +98,7 @@ const selectPhoto = (e) => {
                                     {{ $t('bio') }}
                                 </label>
                                 <textarea
-                                    class="resize-none w-full h-24 py-2 px-4 border dark:bg-darkBgColor dark:text-white text-gray-600 border-gray-500 rounded-lg focus:outline-none focus:border-gray-300"
+                                    class="resize-none w-full h-24 py-2 px-4 font-sans font-semibold border dark:bg-darkBgColor dark:text-white text-gray-600 border-gray-500 rounded-lg focus:outline-none focus:border-gray-300"
                                     :placeholder="$t('bio-placeholder')" />
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const selectPhoto = (e) => {
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6">
                     <div class="w-full p-4 md:w-2/3 lg:mx-4 lg:my-4 md:mx-4 md:my-4 sm:mx-1 sm:my-1">
                         <button type="submit"
-                            class="min-w-full px-5 py-3 text-base font-sans text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
+                            class="min-w-full px-5 py-3 text-base font-sans font-semibold text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
                             {{ $t('save-profile-btn') }}
                         </button>
                     </div>

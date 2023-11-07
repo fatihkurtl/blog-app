@@ -72,7 +72,7 @@ watch(() => memberEmail.value, (newEmail) => {
                                 {{ $t('e-mail') }}
                             </label>
                             <input type="email" name="email" id="email" v-model="memberEmail"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 :placeholder="$t('e-mail-placeholder') + '@gmail.com'">
                             <span v-if="errors.email" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.fullName }} -->
@@ -84,7 +84,7 @@ watch(() => memberEmail.value, (newEmail) => {
                             </p>
                         </div>
                         <button type="submit"
-                            class="w-full px-5 py-3 text-base font-sans text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
+                            class="w-full px-5 py-3 text-base font-sans font-semibold text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
                             {{ $t('send-reset-link') }}
                         </button>
                     </form>

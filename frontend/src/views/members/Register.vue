@@ -152,7 +152,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.fullName" v-model="memberData.fullName"
                                 v-validate="ValidationRules.fullName" type="text" id="fullName" name="fullName"
                                 :placeholder="$t('fullname')"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.fullName" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.fullName }} -->
                                 {{ $t('field-is-required') }}
@@ -169,7 +169,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.userName" v-model="memberData.userName"
                                 v-validate="ValidationRules.userName" type="text" id="userName" name="userName"
                                 :placeholder="$t('username')"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.userName" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.userName }} -->
                                 {{ $t('field-is-required') }}
@@ -185,7 +185,7 @@ const uploadProfilePhoto = (e) => {
                                     $t('e-mail') }}</label>
                             <input :maxlength="characterLimits.email" v-model="memberData.email"
                                 v-validate="ValidationRules.email" type="email" id="email" name="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 :placeholder="$t('e-mail')">
                             <span v-if="errors.email" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.email }} -->
@@ -203,7 +203,7 @@ const uploadProfilePhoto = (e) => {
                             <input :maxlength="characterLimits.password" v-model="memberData.password"
                                 v-validate="ValidationRules.password" type="password" id="password" name="password"
                                 placeholder="•••••••••"
-                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <span v-if="errors.password" class="text-xs text-red-600 dark:text-red-500 font-sans">
                                 <!-- {{ errors.password }} -->
                                 {{ $t('field-is-required') }}
@@ -219,7 +219,7 @@ const uploadProfilePhoto = (e) => {
                                 {{ $t('profile-picture') }}
                             </label>
                             <input @change="uploadProfilePhoto" accept="image/*" max-file-size="3mb" file-upload
-                                class="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
+                                class="block w-full text-sm font-sans font-semibold text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-black dark:border-gray-600 dark:placeholder-gray-400"
                                 id="profilePhoto" type="file">
                             <p :class="[photoErrorsObject.isActive === true ? photoErrorsObject : 'mt-1 text-sm font-sans text-gray-500 dark:text-white']"
                                 id="file_input_help">
@@ -235,7 +235,7 @@ const uploadProfilePhoto = (e) => {
                             </label>
                         </div>
                         <button type="submit"
-                            class="w-full disabled:dark:bg-gray-500 disabled:bg-gray-500 px-5 py-3 text-base font-sans font-medium text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:bg-darkBtnColor dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:focus:ring-sky-800">
+                            class="w-full disabled:dark:bg-gray-500 disabled:bg-gray-500 px-5 py-3 text-base font-sans font-semibold text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:bg-darkBtnColor dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:focus:ring-sky-800">
                             {{ $t('register') }}
                         </button>
                         <div class="mt-4 text-sm font-sans font-medium flex items-end text-gray-500 dark:text-white">

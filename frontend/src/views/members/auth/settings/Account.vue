@@ -49,7 +49,7 @@ import Aside from '../../../../components/members/auth/Aside.vue';
                             </div>
                             <div class="mt-4">
                                 <button type="submit"
-                                    class="px-5 py-3 text-base font-sans text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
+                                    class="px-5 py-3 text-base font-sans font-semibold text-center text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 rounded-lg focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-darkBtnColor dark:focus:ring-sky-800">
                                     {{ $t('save-profile-btn') }}
                                 </button>
                             </div>
@@ -96,7 +96,7 @@ import Aside from '../../../../components/members/auth/Aside.vue';
                     </div>
                     <div class="mt-4">
                         <button type="delete"
-                            class="px-5 py-3 text-base font-sans text-center text-white bg-red-600 hover:bg-red-500 dark:bg-red-600 dark:hover:bg-red-700 rounded-lg focus:ring-4 focus:ring-red-300 sm:w-auto dark:focus:ring-red-800">
+                            class="px-5 py-3 text-base font-sans font-semibold text-center text-white bg-red-600 hover:bg-red-500 dark:bg-red-600 dark:hover:bg-red-700 rounded-lg focus:ring-4 focus:ring-red-300 sm:w-auto dark:focus:ring-red-800">
                             {{ $t('delete-account') }}
                         </button>
                     </div>
