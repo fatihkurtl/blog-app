@@ -17,6 +17,7 @@ import NewPassword from "../views/members/auth/NewPassword.vue";
 import Profile from "../views/members/auth/settings/Profile.vue";
 import Customization from "../views/members/auth/settings/Customization.vue";
 import Account from "../views/members/auth/settings/Account.vue";
+import MemberProfile from "../views/members/auth/Profile.vue";
 // ! Admin Routes
 import Login from "../views/admin/Login.vue";
 // ! 404
@@ -109,6 +110,11 @@ const router = createRouter({
       path: "/new-password/member=:member-token",
       name: "Auth New Password",
       component: NewPassword,
+    },
+    {
+      path: "/profile/:slug",
+      name: "Auth Member Profile",
+      component: MemberProfile,
     },
     // * MEMBER SETTINGS PAGES
     {

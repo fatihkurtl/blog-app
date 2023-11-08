@@ -136,7 +136,7 @@ const uploadProfilePhoto = (e) => {
                     class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-600 md:text-5xl lg:text-6xl dark:text-white">
                     {{ $t('register-banner') }}
                 </h1>
-                <p class="mb-6 text-lg font-sans font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                <p class="mb-6 text-lg font-sans font-normal lg:text-xl text-gray-500 dark:text-gray-400">
                     {{ $t('join-community') }}
                 </p>
             </div>

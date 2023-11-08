@@ -16,9 +16,23 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
     <header>
       <Navbar />
     </header>
-    <RouterView />
+    <RouterView class="router-view" v-slot="{ Component }">
+      <Transition name="page-opacity" mode="out-in">
+        <component :is="Component"/>
+      </Transition>
+    </RouterView>
     <Footer />
   </div>
 </template>
 
-<style scoped></style>
+<style>
+.page-opacity-enter-active,
+.page-opacity-leave-active {
+  transition: 600ms ease all;
+}
+
+.page-opacity-enter-from,
+.page-opacity-leave-to {
+  opacity: 0;
+}
+</style>
