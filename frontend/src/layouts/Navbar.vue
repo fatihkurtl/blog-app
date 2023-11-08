@@ -33,11 +33,11 @@ onClickOutside(userDropdown, (event) => {
 </script>
 
 <template>
-    <nav>
+    <!-- <nav>
         <RouterLink class="text-black dark:text-white" to="/">Home</RouterLink>
-    </nav>
+    </nav> -->
 
-    <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor">
+    <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor min-w-screen">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink to="/" class="flex items-center">
                 <img src="../assets//logo.svg" class="h-8 mr-3" alt="Vue Logo" />
@@ -132,10 +132,11 @@ onClickOutside(userDropdown, (event) => {
                         <div class="py-1" role="menu" aria-orientation="vertical"
                             aria-labelledby="dropdownUserAvatarButton">
                             <div class="px-1 py-1 text-base text-gray-900 dark:text-white">
-                                <RouterLink to="/profile/:slug" class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                                <div>Fatih Kurt</div>
-                                <div class="font-sans text-sm truncate">@username</div>
-                            </RouterLink>
+                                <RouterLink to="/profile/:slug"
+                                    class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
+                                    <div>Fatih Kurt</div>
+                                    <div class="font-sans text-sm truncate">@username</div>
+                                </RouterLink>
                             </div>
                             <hr class="w-full h-px bg-gray-200 border-0 dark:bg-darkBgColor">
                             <ul>
@@ -230,9 +231,10 @@ onClickOutside(userDropdown, (event) => {
                         </RouterLink>
                     </li>
                 </ul>
+            </div>
+            <!-- MOBILE -->
         </div>
-        <!-- MOBILE -->
-    </div>
-</nav></template>
+    </nav>
+</template>
 
 <style scoped></style>

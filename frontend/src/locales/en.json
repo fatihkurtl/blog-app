@@ -20,6 +20,9 @@
     "legal": "Legal",
     "terms-conditions": "Terms & Conditions",
     "privacy-policy": "Privacy Policy",
+    "subscribe-btn": "Subscribe",
+    "subscribe-newsletter": "Subscribe to Our Newsletter",
+    "your-email": "Your email",
 
     "latest-posts": "Latest Posts",
 
@@ -126,6 +129,8 @@
     "privacy-rule-8": "Contact us: For questions or clarifications regarding our privacy policy, please contact us, for contact",
     "privacy-footer": "By reading and accepting this privacy policy, you acknowledge that you understand FullStack.com's commitments and responsibilities regarding the use of data.",
     "privacy-last-update": "Last update",
+
+    "edit-profile": "Edit Profile",
 
     "profile": "Profile",
     "customization": "Customization",

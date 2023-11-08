@@ -20,6 +20,9 @@
     "legal": "Yasal",
     "terms-conditions": "Hükümler & Koşullar",
     "privacy-policy": "Gizlilik Politikası",
+    "subscribe-btn": "Abone",
+    "subscribe-newsletter": "Haber bültenimize abone ol",
+    "your-email": "E-post adresiniz",
 
     "latest-posts": "Son Gönderiler",
 
@@ -126,6 +129,8 @@
     "privacy-rule-8": "İletişim: Gizlilik politikamızla ilgili sorularınız veya açıklamalarınız için lütfen bizimle iletişime geçin, iletişim için",
     "privacy-footer": "Bu gizlilik politikasını okuyarak ve kabul ederek, FullStack.com'un veri kullanımına yönelik taahhüt ve sorumluluklarınızı anladığınızı kabul etmiş olursunuz.",
     "privacy-last-update": "Son güncelleme",
+
+    "edit-profile": "Profili Düzenle",
 
     "profile": "Profil",
     "customization": "Özelleştirme",
