@@ -131,9 +131,11 @@ onClickOutside(userDropdown, (event) => {
                         class="origin-bottom-right z-10 absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-darkItemsColor dark:ring-gray-600">
                         <div class="py-1" role="menu" aria-orientation="vertical"
                             aria-labelledby="dropdownUserAvatarButton">
-                            <div class="px-4 py-3 text-base text-gray-900 dark:text-white">
+                            <div class="px-1 py-1 text-base text-gray-900 dark:text-white">
+                                <RouterLink to="/profile/:slug" class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
                                 <div>Fatih Kurt</div>
                                 <div class="font-sans text-sm truncate">@username</div>
+                            </RouterLink>
                             </div>
                             <hr class="w-full h-px bg-gray-200 border-0 dark:bg-darkBgColor">
                             <ul>
