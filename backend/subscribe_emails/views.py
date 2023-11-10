@@ -10,13 +10,18 @@ from .serializers import SubscribeVisitorsSerializer
 
 @api_view(['PUT'])
 def email_subscribe(request):
-    print(request.data)
-    member = MEMBER.objects.filter(email=request.data['email']).first()
-    print('member', member)
-    if member:
-        member.email_subscribe = True
-        member.save()
-    else:
-        visitor = SubscribeVisitors(visitor_email=request.data['email']) 
-        visitor.save()
+  """Subscribes a user to the newsletter."""
+
+  email = request.data["email"]
+
+  member = MEMBER.objects.filter(email=email).first()
+  visitor = SubscribeVisitors.objects.filter(visitor_email=email).first()
+
+  if member is not None and member.email == request.data['email']:
+    member.email_subscribe = True
+    member.save()
     return Response({'message': 'Subscribed', 'status': status.HTTP_202_ACCEPTED}, status.HTTP_202_ACCEPTED)
+
+  visitor = SubscribeVisitors(visitor_email=email)
+  visitor.save()
+  return Response({'message': 'Subscribed', 'status': status.HTTP_202_ACCEPTED}, status.HTTP_202_ACCEPTED)
