@@ -130,7 +130,10 @@
     "privacy-footer": "By reading and accepting this privacy policy, you acknowledge that you understand FullStack.com's commitments and responsibilities regarding the use of data.",
     "privacy-last-update": "Last update",
 
+    "joined-on": "Joined on",
     "edit-profile": "Edit Profile",
+    "recent-commnets": "Recent comments",
+    "comment-written": "comment written",
 
     "profile": "Profile",
     "customization": "Customization",
@@ -143,6 +146,7 @@
     "location-placeholder": "USA, NY",
     "bio": "Bio",
     "bio-placeholder": "A short bio...",
+    "social": "Social",
     "save-profile-btn": "Save Profile Information",
 
     "appearance": "Appearance",

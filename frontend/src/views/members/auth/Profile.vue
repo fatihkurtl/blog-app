@@ -1,10 +1,12 @@
 <script setup>
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 </script>
 
 <template>
     <main class="container mx-auto mt-4 mb-4 lg:px-0 flex justify-center items-center">
-        <section class="bg-lightItemsColor dark:bg-darkItemsColor col-span-3 max-w-3xl">
+        <section class="bg-lightItemsColor dark:bg-darkItemsColor col-span-3 max-w-3xl min-w-full lg:min-w-full">
             <div class="container mx-auto px-4 py-8">
                 <div class="flex flex-col md:flex-row items-center justify-between">
                     <div class="w-full md:w-1/3">
@@ -12,21 +14,37 @@
                         <h1 class="text-4xl text-gray-600 dark:text-white font-sans font-bold text-center mt-4">Fatih Kurt
                         </h1>
                         <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">Fullstack Developer</p>
+                        <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">
+                            {{$t('joined-on')}} Oct 13, 2023
+                        </p>
                         <div class="flex justify-center mt-4 space-x-4">
                             <div class="text-gray-600 dark:text-gray-400 font-sans font-semibold">Turkey, Bursa</div>
-                            <!-- <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">GitHub</a>
+                            <!-- <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">X</a>
+                            <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">GitHub</a>
                             <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">LinkedIn</a> -->
                         </div>
-                        <button to="/settings/profile/member=:member-token"
+                        <div class="flex justify-center mt-4 space-x-4">
+                            <!-- <div class="text-gray-600 dark:text-gray-400 font-sans font-semibold">Turkey, Bursa</div> -->
+                            <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">X</a>
+                            <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">GitHub</a>
+                            <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">LinkedIn</a>
+                        </div>
+                        <button @click="router.push('/settings/profile/member=:member-token')"
                             class="bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 focus:ring-4 dark:bg-darkBtnColor dark:focus:ring-sky-800 focus:ring-blue-300 font-sans text-white px-4 py-2 rounded mt-4 mx-auto block">
-                            {{$t('edit-profile')}}
+                            {{ $t('edit-profile') }}
                         </button>
                     </div>
                     <div class="w-full md:w-2/3 mt-8 md:mt-0 md:pl-8">
-                        <h2 class="text-3xl font-bold mb-4 text-gray-600 dark:text-white">Comments</h2>
-                        <p class="text-lg text-gray-600 dark:text-white mb-4">You have made <strong>12 comments</strong> on
-                            fullstack. Here are
-                            your latest comments:</p>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-600 dark:text-white">{{ $t('recent-commnets') }}</h2>
+                        <p class="text-lg flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                            <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
+                            </svg>
+                        <blockquote class="ml-2"> 12 </blockquote>
+                        <blockquote class="ml-2">{{ $t('comment-written') }}</blockquote>
+                        </p>
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <img class="rounded-full w-12 h-12 mr-4" src="https://via.placeholder.com/400x300"
@@ -69,27 +87,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <figure class="p-8 bg-lightItemsColor dark:bg-darkItemsColor">
-            <img class="w-24 h-24 rounded-full mx-auto" src="/src/assets/images/visitor.png" alt="" width="384" height="512">
-            <div class="pt-6 text-center space-y-4">
-                <figcaption class="font-semibold">
-                    <div class="text-gray-600 dark:text-white text-2xl font-sans">
-                        John Doe
-                    </div>
-                    <div class="text-gray-700 dark:text-gray-500 font-sans">
-                        Fullstack Developer, TR
-                    </div>
-                </figcaption>
-                <blockquote>
-                    <p class="text-lg font-medium">
-                        “Tailwind CSS is the only framework that I've seen scale
-                        on large teams. It’s easy to customize, adapts to any design,
-                        and the build size is tiny.”
-                    </p>
-                </blockquote>                        
-            </div>
-        </figure> -->
-    </section>
-</main></template>
+        </section>
+    </main>
+</template>
 
 <style lang="scss" scoped></style>

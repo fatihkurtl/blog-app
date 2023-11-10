@@ -4,7 +4,7 @@ import CommentSection from '../../../components/details/CommentSection.vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
-console.log(`id: ${route.params.id}`);
+console.log(`slug: ${route.params.slug}`);
 </script>
 
 <template>
@@ -14,7 +14,7 @@ console.log(`id: ${route.params.id}`);
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6 flex flex-col md:flex-row">
                     <!-- Blog Post -->
                     <div class="dark:bg-darkItemsColor p-6 mt-8">
-                        <h1 class="text-2xl font-bold dark:text-white mb-4">Blog Post Title {{ route.params.id }}</h1>
+                        <h1 class="text-2xl font-bold dark:text-white mb-4">Blog Post Title {{ route.params.slug }}</h1>
                         <p class="dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
                             dolorum
                             doloribus

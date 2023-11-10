@@ -130,7 +130,10 @@
     "privacy-footer": "Bu gizlilik politikasını okuyarak ve kabul ederek, FullStack.com'un veri kullanımına yönelik taahhüt ve sorumluluklarınızı anladığınızı kabul etmiş olursunuz.",
     "privacy-last-update": "Son güncelleme",
 
+    "joined-on": "Katıldı",
     "edit-profile": "Profili Düzenle",
+    "recent-commnets": "Son yorumlar",
+    "comment-written": "yorum yazıldı",
 
     "profile": "Profil",
     "customization": "Özelleştirme",
@@ -143,6 +146,7 @@
     "location-placeholder": "TR, IST",
     "bio": "Biyografi",
     "bio-placeholder": "Kısa bir biyografi...",
+    "social": "Sosyal",
     "save-profile-btn": "Profil Bilgilerini Kaydet",
 
     "appearance": "Görünüş",

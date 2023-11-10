@@ -161,20 +161,20 @@ onClickOutside(userDropdown, (event) => {
                                 <hr class="w-full h-px bg-gray-200 border-0 dark:bg-darkBgColor">
                                 <li class="py-1 px-1">
                                     <!-- sadece kullanici giris yapmamissa gozukecek -->
-                                    <!-- <RouterLink to="/login"
-                    class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-md cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                    {{ $t('login') }}
-                </RouterLink> -->
-                                    <!-- <RouterLink to="/register"
-                    class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-md cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                    {{ $t('register') }}
-                </RouterLink> -->
-                                    <!-- sadece kullanici giris yapmamissa gozukecek -->
-                                    <!-- sadece kullanici giris yapmissa gozukecek -->
                                     <RouterLink to="/login"
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-md cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                                        {{ $t('sign-out') }}
+                                        {{ $t('login') }}
                                     </RouterLink>
+                                    <RouterLink to="/register"
+                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-md cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
+                                        {{ $t('register') }}
+                                    </RouterLink>
+                                    <!-- sadece kullanici giris yapmamissa gozukecek -->
+                                    <!-- sadece kullanici giris yapmissa gozukecek -->
+                                    <!-- <RouterLink to="/login"
+                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-md cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
+                                        {{ $t('sign-out') }}
+                                    </RouterLink> -->
                                     <!-- sadece kullanici giris yapmissa gozukecek -->
                                 </li>
                             </ul>

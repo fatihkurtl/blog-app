@@ -77,13 +77,37 @@ const selectPhoto = (e) => {
                     </div>
                 </div>
                 <!-- Member -->
-                <!-- Basic -->
+                <!-- Basic & Social -->
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6 flex flex-col md:flex-row">
                     <div class="w-full p-4 md:w-2/3 lg:mx-4 lg:my-4 md:mx-4 md:my-4 sm:mx-1 sm:my-1">
                         <h2 class="text-xl md:text-2xl font-sans font-semibold text-gray-600 dark:text-white mb-2">
                             {{ $t('basic') }}
                         </h2>
                         <div>
+                            <div class="mt-4">
+                                <label for="x"
+                                    class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">
+                                    X
+                                </label>
+                                <input type="text" id="x" name="x" :placeholder="'X ' + $t('account') + ' url'"
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="github"
+                                    class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">
+                                    GitHub
+                                </label>
+                                <input type="text" id="github" name="github" :placeholder="'GitHub ' + $t('account') + ' url'"
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="linkedin"
+                                    class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">
+                                    LinkedIn
+                                </label>
+                                <input type="text" id="linkedin" name="linkedin" :placeholder="'LinkedIn ' + $t('account') + ' url'"
+                                    class="bg-gray-50 border border-gray-300 text-gray-600 text-sm font-sans font-semibold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
                             <div class="mt-4">
                                 <label for="fullName"
                                     class="block text-gray-600 dark:text-white text-sm font-sans font-semibold mb-2">
@@ -104,7 +128,7 @@ const selectPhoto = (e) => {
                         </div>
                     </div>
                 </div>
-                <!-- Basic -->
+                <!-- Basic & Social -->
                 <!-- Save Button -->
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6">
                     <div class="w-full p-4 md:w-2/3 lg:mx-4 lg:my-4 md:mx-4 md:my-4 sm:mx-1 sm:my-1">

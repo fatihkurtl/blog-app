@@ -4,7 +4,7 @@ import CommentSection from '../../../components/details/CommentSection.vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute()
-console.log(`id: ${route.params.id} - category: ${route.params.category}`);
+console.log(`slug: ${route.params.slug} - category: ${route.params.category}`);
 </script>
 
 <template>
