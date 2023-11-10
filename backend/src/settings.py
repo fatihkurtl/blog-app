@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # 'admin_interface',
+    # 'colorfield',
     'django_filters',
     'corsheaders',
     'rest_framework.authtoken',
@@ -48,7 +50,8 @@ INSTALLED_APPS = [
     'mdeditor',
     'blog',
     'contact',
-    'member'
+    'member',
+    'subscribe_emails'
 ]
 
 LANGUAGES = (
@@ -76,6 +79,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

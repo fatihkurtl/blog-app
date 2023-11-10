@@ -14,8 +14,32 @@ class MEMBER(models.Model):
     is_active = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     
+    email_subscribe = models.BooleanField(default=False)
+    
     register_date = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
     
     def __str__(self):
         return f'{self.userName}'
+
+
+class SocialMediaLink(models.Model):
+    member = models.ForeignKey(MEMBER, to_field='userName', related_name='socialMedia', on_delete=models.CASCADE)
+    x_url = models.URLField(blank=True, null=True)
+    github_url = models.URLField(blank=True, null=True)
+    linkedin_url = models.URLField(blank=True, null=True)
+    create_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    update_at = models.DateTimeField(auto_now=True, blank=True, null=True)
+    
+    def __str__(self):
+        return f'{self.member}'
+
+
+# class SocialMedia(models.Model):
+#     member = models.ForeignKey(MEMBER, to_field='userName', related_name='Social Media', on_delete=models.CASCADE)
+#     twitter_url = models.CharField(max_length=200, blank=True, null=True)
+#     github_url = models.CharField(max_length=200, blank=True, null=True)
+#     linkedin_url = models.CharField(max_length=200, blank=True, null=True)
+    
+#     def __str__(self):
+#         return f'{self.member}'

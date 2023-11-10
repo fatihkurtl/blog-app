@@ -8,17 +8,21 @@ class COMMENTInline(admin.TabularInline):
     
 
 class POSTAdmin(admin.ModelAdmin):
-   list_display = ('title', 'category', 'language', 'is_active')
-   list_filter = ('category', 'language', 'is_active')
+   list_display = ('title', 'category', 'language', 'is_active', 'create_at')
+   list_filter = ('category', 'language', 'is_active', 'create_at')
    search_fields = ('title', 'subTitle', 'mdContent')
    list_editable = ['category', 'is_active']
    inlines = [COMMENTInline]
+   search_help_text = ('You can search by title subtitle and post content')
    
     
 class COMMENTAdmin(admin.ModelAdmin):
-    list_display = ('post', 'member', 'is_active')
-    list_filter = ('post', 'member', 'is_active')
+    list_display = ('post', 'member', 'is_active', 'create_at')
+    list_filter = ('post', 'member', 'is_active', 'create_at')
     search_fields = ('post', 'member')
+    readonly_fields = ['create_at']
+    search_help_text = ('You can search by post and member information')
+    
 
 
 admin.site.register(POST, POSTAdmin)

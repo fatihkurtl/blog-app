@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
-from .models import MEMBER
-from .serializers import MEMBERSerializer
+from .models import MEMBER, SocialMediaLink
+from .serializers import MEMBERSerializer, SocialMediaLinkSerializer
 
 import jwt
 from datetime import datetime, timedelta
@@ -67,8 +67,11 @@ def login(request):
 
 @api_view(['PUT'])
 def profile_update(request, username, pk):
+    print(request.data)
     try:
         member = MEMBER.objects.filter(pk=pk).first()
+        socialMediaLinks = SocialMediaLink.objects.filter(member=member.userName).first()
+        print(socialMediaLinks)
         if member != None:
             if request.headers['Token'] == member.tokenData:
                 member.fullName = request.data.get('fullName', member.fullName)
@@ -77,6 +80,12 @@ def profile_update(request, username, pk):
                 member.location = request.data.get('location', member.location)
                 member.bio = request.data.get('bio', member.bio)
                 member.save()
+                if socialMediaLinks == None:
+                    socialMediaLinks = SocialMediaLink(member=member)
+                socialMediaLinks.x_url = request.data.get('x', socialMediaLinks.x_url)
+                socialMediaLinks.github_url = request.data.get('github', socialMediaLinks.github_url)
+                socialMediaLinks.linkedin_url = request.data.get('linkedin', socialMediaLinks.linkedin_url)
+                socialMediaLinks.save()                                                     
                 return Response({'message': 'Update Successful', 'status': status.HTTP_202_ACCEPTED}, status.HTTP_202_ACCEPTED)
             else:
                 return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
@@ -174,3 +183,4 @@ def new_password(request):
     except Exception as e:
         return Response({'error': e, 'status': status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
     return Response({'message': 'Password changed successfully', 'status': status.HTTP_201_CREATED}, status.HTTP_201_CREATED)
+    
