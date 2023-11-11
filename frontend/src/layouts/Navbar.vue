@@ -147,7 +147,7 @@ onClickOutside(userDropdown, (event) => {
                                 <li class="py-1 px-1">
                                     <RouterLink to="/"
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
-                                        Reading List
+                                        Reading list
                                     </RouterLink>
                                 </li>
                                 <li class="py-1 px-1">

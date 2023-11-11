@@ -118,7 +118,9 @@ const router = createRouter({
       component: MemberProfile,
     },
     {
-      path: "/readinglist/",
+      path: "/readinglist/member=:member-token",
+      name: "Auth Member Reading List",
+      component: ReadingList,
     },
     // * MEMBER SETTINGS PAGES
     {
