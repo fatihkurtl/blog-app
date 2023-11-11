@@ -6,6 +6,7 @@
     "contact": "Contact",
     "search": "Search...",
 
+    "reading-list": "Reading list",
     "settings": "Settings",
     "sign-out": "Sign Out",
 
@@ -168,5 +169,9 @@
     "delete-account-desc": "Delete your profile, along with your authentication associations. This does not include applications permissions. You will have to remove them yourself:",
     "delete-account-desc2": "Delete any and all content you have, such as articles, comments, or your reading list. Allow your username to become available to anyone.",
     "delete-account": "Delete Account",
-    "any-questions": "Contact if you have any questions."
+    "any-questions": "Contact if you have any questions.",
+
+    "like": "Like",
+    "add-comment": "Add comment",
+    "min-read": "min read"
 }

@@ -107,6 +107,7 @@ const router = createRouter({
       name: "NotFound",
       component: Page404,
     },
+    // ! Auth
     {
       path: "/new-password/member=:member-token",
       name: "Auth New Password",
@@ -122,6 +123,7 @@ const router = createRouter({
       name: "Auth Member Reading List",
       component: ReadingList,
     },
+    // ! Auth
     // * MEMBER SETTINGS PAGES
     {
       path: "/settings/profile/member=:member-token",

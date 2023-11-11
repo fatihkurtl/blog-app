@@ -5,7 +5,7 @@
 <template>
     <aside class="col-span-1 hidden sm:block">
         <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4">
-            <ul class="space-y-2 font-medium">
+            <ul class="space-y-2 font-semibold">
                 <li>
                     <RouterLink to="/settings/profile/member=:member-token" active-class="dark:bg-blue-950 bg-gray-200"
                         class="flex items-center p-2 rounded-lg text-black hover:bg-gray-200 hover:text-sky-600 dark:text-white dark:hover:text-sky-600 dark:hover:bg-gray-800 group">

@@ -3,9 +3,174 @@
 </script>
 
 <template>
-<h1 class="text-white">Reading List Page</h1>
+    <section class="mx-auto my-4 p-8 bg-lightItemsColor dark:bg-darkItemsColor">
+        <!-- Örnek Kaydedilmiş Postlar -->
+        <div
+            class="w-full mx-auto max-w-5xl p-4 border border-gray-200 dark:border-gray-700 bg-lightItemsColor rounded-lg sm:p-8 dark:bg-darkItemsColor">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4">{{ $t('reading-list') }} (0)</h2>
+                <!-- <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                    View all
+                </a> -->
+            </div>
+            <div class="flow-root">
+                <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                    <li class="py-3 sm:py-4">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
+                                    alt="Neil image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4">
+                                <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                    Blog Post 1
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <!-- Kaydetme -->
+                                <button
+                                    class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg>
+                                    <!-- <span>Save</span> -->
+                                </button>
+                                <!-- Kaydetme -->
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 sm:py-4">
+                        <div class="flex items-center ">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
+                                    alt="Bonnie image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4">
+                                <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                    Blog Post 2
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <!-- Kaydetme -->
+                                <button
+                                    class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg>
+                                    <!-- <span>Save</span> -->
+                                </button>
+                                <!-- Kaydetme -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 sm:py-4">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
+                                    alt="Michael image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4">
+                                <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                    Blog Post 3
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <!-- Kaydetme -->
+                                <button
+                                    class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg>
+                                    <!-- <span>Save</span> -->
+                                </button>
+                                <!-- Kaydetme -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="py-3 sm:py-4">
+                        <div class="flex items-center ">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
+                                    alt="Lana image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4">
+                                <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                    Blog Post 4
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <!-- Kaydetme -->
+                                <button
+                                    class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg>
+                                    <!-- <span>Save</span> -->
+                                </button>
+                                <!-- Kaydetme -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pt-3 pb-0 sm:pt-4">
+                        <div class="flex items-center ">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
+                                    alt="Thomas image">
+                            </div>
+                            <div class="flex-1 min-w-0 ms-4">
+                                <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                    Blog Post 5
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <!-- Kaydetme -->
+                                <button
+                                    class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg>
+                                    <!-- <span>Save</span> -->
+                                </button>
+                                <!-- Kaydetme -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style  scoped></style>
