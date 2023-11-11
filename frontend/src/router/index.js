@@ -18,6 +18,7 @@ import Profile from "../views/members/auth/settings/Profile.vue";
 import Customization from "../views/members/auth/settings/Customization.vue";
 import Account from "../views/members/auth/settings/Account.vue";
 import MemberProfile from "../views/members/auth/Profile.vue";
+import ReadingList from "../views/members/auth/ReadingList.vue";
 // ! Admin Routes
 import Login from "../views/admin/Login.vue";
 // ! 404
@@ -115,6 +116,9 @@ const router = createRouter({
       path: "/profile/:slug",
       name: "Auth Member Profile",
       component: MemberProfile,
+    },
+    {
+      path: "/readinglist/",
     },
     // * MEMBER SETTINGS PAGES
     {

@@ -145,18 +145,16 @@ onClickOutside(userDropdown, (event) => {
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Dashboard</a>
                                 </li>
                                 <li class="py-1 px-1">
+                                    <RouterLink to="/"
+                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
+                                        Reading List
+                                    </RouterLink>
+                                </li>
+                                <li class="py-1 px-1">
                                     <RouterLink to="/settings/profile/member=:member-token"
                                         class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
                                         {{ $t('settings') }}
                                     </RouterLink>
-                                </li>
-                                <li class="py-1 px-1">
-                                    <a href="#"
-                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Earnings</a>
-                                </li>
-                                <li class="py-1 px-1">
-                                    <a href="#"
-                                        class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">Earnings</a>
                                 </li>
                                 <hr class="w-full h-px bg-gray-200 border-0 dark:bg-darkBgColor">
                                 <li class="py-1 px-1">
@@ -204,7 +202,9 @@ onClickOutside(userDropdown, (event) => {
                     <li>
                         <RouterLink to="/web-development" active-class="dark:bg-blue-950 bg-gray-200"
                             class="inline-flex items-center font-sans font-semibold justify-center px-2 py-2 text-base text-black hover:text-sky-600 hover:underline dark:text-white rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:text-sky-600"
-                            aria-current="page">{{ $t('web-development') }}</RouterLink>
+                            aria-current="page">
+                            {{ $t('web-development') }}
+                        </RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/trends" active-class="dark:bg-blue-950 bg-gray-200"
