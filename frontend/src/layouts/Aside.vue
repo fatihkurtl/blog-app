@@ -5,30 +5,109 @@
 <template>
     <aside class="col-span-1 hidden sm:block">
         <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4">
-            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{$t('latest-posts')}}</h3>
+
+            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{ $t('latest-posts') }}</h3>
             <ul>
-                <li class="mb-2">
-                    <RouterLink to="/post-detail-1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/post-detail-1" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 1
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
-                <li class="mb-2">
-                    <RouterLink to="/post-detail-2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/post-detail-2" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 2
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
-                <li class="mb-2">
-                    <RouterLink to="/post-detail-3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/post-detail-3" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 3
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
             <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor">
-            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{$t('trends')}}</h3>
+            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{ $t('trends') }}</h3>
             <ul>
-                <li class="mb-2">
-                    <RouterLink to="/trends/post-detail-1" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 1</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/trends/post-detail-1" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 1
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
-                <li class="mb-2">
-                    <RouterLink to="/trends/post-detail-2" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 2</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/trends/post-detail-2" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 2
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
-                <li class="mb-2">
-                    <RouterLink to="/trends/post-detail-3" class="text-blue-500 font-sans font-semibold hover:underline">Post Title 3</RouterLink>
+                <li class="py-3 sm:py-4 mb-2">
+                    <RouterLink to="/trends/post-detail-3" class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                                Blog Post 3
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus quis porta dui. Ut eu iaculis massa.
+                            </p>
+                        </div>
+                    </RouterLink>
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
