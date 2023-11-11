@@ -14,7 +14,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 1
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -30,7 +30,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -46,7 +46,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -67,7 +67,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 1
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -83,7 +83,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -99,7 +99,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
