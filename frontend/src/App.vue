@@ -22,7 +22,7 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
       <Navbar />
     </header>
     <!-- MOBILE SEARCH BAR-->
-      <Searchbar v-if="!route['name'].includes('Auth')" />
+      <Searchbar />
     <!-- MOBILE SEARCH BAR -->
     <RouterView class="router-view" v-slot="{ Component }">
       <Transition name="page-opacity" mode="out-in">
