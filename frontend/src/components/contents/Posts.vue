@@ -14,7 +14,7 @@ const route = useRoute();
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
                     <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-500 mb-2">
+                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
                         Blog Post Title 1
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 mb-2 my-4 lg:my-8">
@@ -86,7 +86,7 @@ const route = useRoute();
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
                     <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-500 mb-2">
+                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
                         Blog Post Title 2
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 my-4 lg:my-8">
@@ -159,7 +159,7 @@ const route = useRoute();
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
                     <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-500 mb-2">
+                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
                         Blog Post Title 3
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 my-4 lg:my-8">
