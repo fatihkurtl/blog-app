@@ -1,8 +1,13 @@
 <script setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 import Navbar from './layouts/Navbar.vue';
 import Footer from './layouts/Footer.vue';
 import { baseApi } from './composables/api/baseApi';
+import Searchbar from './components/mobile/Searchbar.vue';
+
+const route = useRoute();
+// console.log(route['name'].includes('Auth'));
 
 console.log(`App.vue => ${baseApi('eeee')}`);
 
@@ -16,9 +21,12 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
     <header>
       <Navbar />
     </header>
+    <!-- MOBILE SEARCH BAR-->
+      <Searchbar v-if="!route['name'].includes('Auth')" />
+    <!-- MOBILE SEARCH BAR -->
     <RouterView class="router-view" v-slot="{ Component }">
       <Transition name="page-opacity" mode="out-in">
-        <component :is="Component"/>
+        <component :is="Component" />
       </Transition>
     </RouterView>
     <Footer />

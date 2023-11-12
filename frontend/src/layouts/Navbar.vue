@@ -46,7 +46,7 @@ onClickOutside(userDropdown, (event) => {
                 </span>
             </RouterLink>
             <!-- SEARCH BAR-->
-            <div class="flex md:order-2">
+            <!-- <div class="flex md:order-2">
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
                     aria-expanded="false"
                     class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
@@ -70,7 +70,7 @@ onClickOutside(userDropdown, (event) => {
                         class="block w-full p-2 pl-10 font-sans font-semibold text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         :placeholder="$t('search')">
                 </div>
-            </div>
+            </div> -->
             <!-- SEARCH BAR -->
             <div class="flex items-center md:order-2">
                 <!-- User -->
