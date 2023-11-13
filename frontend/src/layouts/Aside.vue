@@ -34,7 +34,7 @@
             <!-- SEARCH BAR -->
         </div>
         <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4 my-2">
-            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{ $t('latest-posts') }}</h3>
+            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4">{{ $t('latest-posts') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-1" class="flex items-center">
@@ -90,7 +90,7 @@
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
             <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor">
-            <h3 class="text-xl font-sans font-bold text-black dark:text-white mb-4">{{ $t('trends') }}</h3>
+            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4">{{ $t('trends') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-1" class="flex items-center">

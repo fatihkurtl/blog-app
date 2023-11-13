@@ -1,5 +1,7 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
+
+
 const route = useRoute();
 
 </script>
@@ -13,8 +15,7 @@ const route = useRoute();
                 class="w-full md:w-1/3 h-auto object-cover">
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
-                    <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
+                    <h2 class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-gray-600 dark:text-white mb-2">
                         Blog Post Title 1
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 mb-2 my-4 lg:my-8">
@@ -57,7 +58,7 @@ const route = useRoute();
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                         </svg>
-                        <span>{{$t('save')}}</span>
+                        <span>{{ $t('save') }}</span>
                     </button>
                 </div>
                 <!-- Actions -->
@@ -70,7 +71,7 @@ const route = useRoute();
                                 d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg> -->
-                        <span class="lg:mt-8">3 {{$t('min-read')}}</span>
+                        <span class="lg:mt-8">3 {{ $t('min-read') }}</span>
 
                     </div>
                 </div>
@@ -85,8 +86,7 @@ const route = useRoute();
                 class="w-full md:w-1/3 h-auto object-cover">
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
-                    <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
+                    <h2 class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-gray-600 dark:text-white mb-2">
                         Blog Post Title 2
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 my-4 lg:my-8">
@@ -131,7 +131,7 @@ const route = useRoute();
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                         </svg>
-                        <span>{{$t('save')}}</span>
+                        <span>{{ $t('save') }}</span>
                     </button>
                 </div>
                 <!-- Actions -->
@@ -144,7 +144,7 @@ const route = useRoute();
                                 d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg> -->
-                        <span class="lg:mt-8">3 {{$t('min-read')}}</span>
+                        <span class="lg:mt-8">3 {{ $t('min-read') }}</span>
                     </div>
                 </div>
                 <!-- Reading Time -->
@@ -158,8 +158,7 @@ const route = useRoute();
                 class="w-full md:w-1/3 h-auto object-cover">
             <div class="w-full md:w-2/3 p-4">
                 <div class="px-1 py-1">
-                    <h2
-                        class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-black dark:text-white mb-2">
+                    <h2 class="text-2xl md:text-3xl lg:text-3xl font-sans font-bold text-gray-600 dark:text-white mb-2">
                         Blog Post Title 3
                     </h2>
                     <p class="text-gray-800 font-sans dark:text-gray-300 my-4 lg:my-8">
@@ -204,7 +203,7 @@ const route = useRoute();
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                         </svg>
-                        <span>{{$t('save')}}</span>
+                        <span>{{ $t('save') }}</span>
                     </button>
                 </div>
                 <!-- Kayıt etme -->
@@ -218,7 +217,7 @@ const route = useRoute();
                                 d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg> -->
-                        <span class="lg:mt-8">3 {{$t('min-read')}}</span>
+                        <span class="lg:mt-8">3 {{ $t('min-read') }}</span>
                     </div>
                 </div>
                 <!-- Reading Time -->
