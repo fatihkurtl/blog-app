@@ -8,10 +8,7 @@
         <div
             class="w-full mx-auto max-w-5xl p-4 border border-gray-200 dark:border-gray-700 bg-lightItemsColor rounded-lg sm:p-8 dark:bg-darkItemsColor">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4">{{ $t('reading-list') }} (0)</h2>
-                <!-- <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                    View all
-                </a> -->
+                <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4">{{ $t('reading-list') }} (0)</h2>                
             </div>
             <div class="flow-root">
                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
@@ -34,12 +31,20 @@
                                 <!-- Kaydetme -->
                                 <button
                                     class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                    <!-- Tiklandiginda bu icon aktif olacak -->
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-1 my-1">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg> -->
+                                    <!-- Post kayitli olacagi icin bu icon gozukecek degilse yukaridaki -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 mx-1 my-1">
+                                        <path fill-rule="evenodd"
+                                            d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                    <!-- <span>Save</span> -->
+
                                 </button>
                                 <!-- Kaydetme -->
 
@@ -65,12 +70,17 @@
                                 <!-- Kaydetme -->
                                 <button
                                     class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-1 my-1">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 mx-1 my-1">
+                                        <path fill-rule="evenodd"
+                                            d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                    <!-- <span>Save</span> -->
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
@@ -95,12 +105,17 @@
                                 <!-- Kaydetme -->
                                 <button
                                     class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-1 my-1">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 mx-1 my-1">
+                                        <path fill-rule="evenodd"
+                                            d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                    <!-- <span>Save</span> -->
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
@@ -125,12 +140,17 @@
                                 <!-- Kaydetme -->
                                 <button
                                     class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-1 my-1">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 mx-1 my-1">
+                                        <path fill-rule="evenodd"
+                                            d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                    <!-- <span>Save</span> -->
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
@@ -155,12 +175,17 @@
                                 <!-- Kaydetme -->
                                 <button
                                     class="flex items-center font-sans font-semibold px-1 py-1 text-gray-600 dark:text-gray-400 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:text-blue-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-1 my-1">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 mx-1 my-1">
+                                        <path fill-rule="evenodd"
+                                            d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                    <!-- <span>Save</span> -->
                                 </button>
                                 <!-- Kaydetme -->
                             </div>

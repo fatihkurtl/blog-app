@@ -9,7 +9,7 @@ console.log(`slug: ${route.params.slug} - category: ${route.params.category}`);
 </script>
 
 <template>
-    <main class="container mx-auto mt-4 px-4 lg:px-0">
+    <main class="container mx-auto mt-4 px-4 lg:px-0 min-w-full">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="col-span-2">
                 <div class="bg-lightItemsColor dark:bg-darkItemsColor overflow-hidden mb-6 flex flex-col md:flex-row">
