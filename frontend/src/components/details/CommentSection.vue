@@ -19,26 +19,28 @@ const save = () => { // comment basarili olursa diye bir ornek, ayni islem basar
 <template>
     <div class="bg-lightItemsColor dark:bg-darkItemsColor p-6 mt-8">
         <!-- Comment -->
-        <div class="flex items-start">
+        <RouterLink to="/user/:slug" class="flex items-start">
             <img src="https://via.placeholder.com/64" alt="User Avatar" class="w-8 h-8 rounded-full mr-4">
-            <div>
+            <div class="border border-neutral-200 dark:border-neutral-800 rounded-lg px-4 py-2">
                 <h2 class="text-base font-semibold dark:text-white text-black">John Doe</h2>
-                <p class="text-sm dark:text-white text text-black font-sans">
+                <p class="text-sm dark:text-white hyphens-auto text-black font-sans">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ex ipsum, at dapibus mi blandit a.
                 </p>
             </div>
-        </div>
+        </RouterLink>
         <!-- Comment -->
 
         <!-- Comment -->
         <div class="flex items-start mt-4">
             <img src="https://via.placeholder.com/64" alt="User Avatar" class="w-8 h-8 rounded-full mr-4">
-            <div>
+            <RouterLink to="/user/:slug">
+            <div class="border border-neutral-200 dark:border-neutral-800 rounded-lg px-4 py-2">
                 <h2 class="text-base font-semibold dark:text-white text-black">Jane Smith</h2>
-                <p class="text-sm dark:text-white text text-black font-sans">
+                <p class="text-sm dark:text-white hyphens-auto text-black font-sans">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ex ipsum, at dapibus mi blandit a.
                 </p>
             </div>
+            </RouterLink>
         </div>
         <!-- Comment -->
 

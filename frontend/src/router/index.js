@@ -114,10 +114,25 @@ const router = createRouter({
       component: NewPassword,
     },
     {
-      path: "/profile/:slug",
-      name: "Auth Member Profile",
-      component: MemberProfile,
+      path: "",
+      children: [
+        {
+          path: "profile/:slug",
+          name: "Auth Member Profile",
+          component: MemberProfile,
+        },
+        {
+          path: "user/:slug",
+          name: "Visitor Profile",
+          component: MemberProfile,
+        },
+      ],
     },
+    // {
+    //   path: "/profile/:slug",
+    //   name: "Auth Member Profile",
+    //   component: MemberProfile,
+    // },
     {
       path: "/readinglist/member=:member-token",
       name: "Auth Member Reading List",

@@ -5,7 +5,7 @@ const router = useRouter();
 </script>
 
 <template>
-    <main class="container mx-auto mt-4 mb-4 lg:px-0 flex justify-center items-center">
+    <main class="container mx-auto mt-4 mb-4 lg:px-0 flex justify-center items-center min-w-full">
         <section class="bg-lightItemsColor dark:bg-darkItemsColor col-span-3 max-w-3xl min-w-full lg:min-w-full">
             <div class="container mx-auto px-4 py-8">
                 <div class="flex flex-col md:flex-row items-center justify-between">
