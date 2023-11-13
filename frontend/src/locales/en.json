@@ -135,6 +135,12 @@
     "edit-profile": "Edit Profile",
     "recent-commnets": "Recent comments",
     "comment-written": "comment written",
+    "mins-ago": "mins ago",
+    "min-ago": "min ago",
+    "hours-ago": "hours ago",
+    "hour-ago": "hour ago",
+    "days-ago": "days ago",
+    "day-ago": "day ago",
 
     "profile": "Profile",
     "customization": "Customization",

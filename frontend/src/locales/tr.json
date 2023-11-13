@@ -135,6 +135,12 @@
     "edit-profile": "Profili Düzenle",
     "recent-commnets": "Son yorumlar",
     "comment-written": "yorum yazıldı",
+    "mins-ago": "dakika önce",
+    "min-ago": "dakika önce",
+    "hours-ago": "saat önce",
+    "hour-ago": "saat önce",
+    "days-ago": "gün önce",
+    "day-ago": "gün önce",
 
     "profile": "Profil",
     "customization": "Özelleştirme",

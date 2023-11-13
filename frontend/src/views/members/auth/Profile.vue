@@ -15,7 +15,7 @@ const router = useRouter();
                         </h1>
                         <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">Fullstack Developer</p>
                         <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">
-                            {{$t('joined-on')}} Oct 13, 2023
+                            {{ $t('joined-on') }} Oct 13, 2023
                         </p>
                         <div class="flex justify-center mt-4 space-x-4">
                             <div class="text-gray-600 dark:text-gray-400 font-sans font-semibold">Turkey, Bursa</div>
@@ -37,11 +37,17 @@ const router = useRouter();
                     <div class="w-full md:w-2/3 mt-8 md:mt-0 md:pl-8">
                         <h2 class="text-3xl font-bold mb-4 text-gray-600 dark:text-white">{{ $t('recent-commnets') }}</h2>
                         <p class="text-lg flex items-center text-gray-600 dark:text-gray-400 mb-4">
-                            <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" aria-hidden="true"
+                            <!-- <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                     d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
+                            </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-gray-600 dark:text-gray-400">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
                             </svg>
+
                         <blockquote class="ml-2"> 12 </blockquote>
                         <blockquote class="ml-2">{{ $t('comment-written') }}</blockquote>
                         </p>
@@ -55,7 +61,7 @@ const router = useRouter();
                                     <p class="text-lg text-gray-800 dark:text-white mt-2">Great article! I learned a lot
                                         from your examples.
                                         Thanks for sharing!</p>
-                                    <p class="text-sm text-gray-600 dark:text-white mt-2">2 hours ago</p>
+                                    <p class="text-sm text-gray-600 dark:text-white mt-2">2 {{ $t('hours-ago') }}</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -68,7 +74,7 @@ const router = useRouter();
                                         liked the one about
                                         reading other people's code. I think it's a great way to learn new techniques and
                                         best practices.</p>
-                                    <p class="text-sm text-gray-600 dark:text-white mt-2">1 day ago</p>
+                                    <p class="text-sm text-gray-600 dark:text-white mt-2">1 {{ $t('day-ago') }}</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -80,7 +86,7 @@ const router = useRouter();
                                         all the time for
                                         prototyping and testing ideas. It's so easy and fast to set up and deploy. Kudos to
                                         you and your team for creating such a wonderful tool!</p>
-                                    <p class="text-sm text-gray-600 dark:text-white mt-2">2 days ago</p>
+                                    <p class="text-sm text-gray-600 dark:text-white mt-2">2 {{ $t('days-ago') }}</p>
                                 </div>
                             </div>
                         </div>
