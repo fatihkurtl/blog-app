@@ -34,7 +34,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'admin_interface',
     # 'colorfield',
+    'modeltranslation',
+    'django.contrib.admin',
     'django_filters',
     'corsheaders',
     'rest_framework.authtoken',
@@ -53,11 +54,6 @@ INSTALLED_APPS = [
     'member',
     'subscribe_emails'
 ]
-
-LANGUAGES = (
-    ('en', 'English'),
-    ('tr', 'Turkish'),
-)
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -78,6 +74,7 @@ CORS_ALLOWED_ORIGINS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
@@ -216,7 +213,23 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('tr', 'Turkish'),
+)
+
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale/',
+]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'tr'
+
+MODELTRANSLATION_LANGUAGES = ('tr', 'en')
 
 
 # Static files (CSS, JavaScript, Images)

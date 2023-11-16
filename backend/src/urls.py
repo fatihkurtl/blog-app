@@ -25,6 +25,8 @@ from subscribe_emails.urls import urlpatterns as subscribe_urlpatterns
 
 from django.conf.urls.i18n import i18n_patterns
 
+from blog.views import set_language
+
 urlpatterns = [
     # path("i18n/", include("django.conf.urls.i18n")),
     path('admin/', admin.site.urls),
@@ -37,6 +39,11 @@ urlpatterns = [
         ])),
 ]
 # urlpatterns += i18n_patterns(path("admin/", admin.site.urls))
+
+urlpatterns = [
+    *i18n_patterns(*urlpatterns, prefix_default_language=False),
+    path("set_language/<str:language>/", set_language, name="set-language"),
+    ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
