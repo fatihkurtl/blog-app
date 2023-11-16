@@ -37,7 +37,7 @@ onClickOutside(userDropdown, (event) => {
         <RouterLink class="text-black dark:text-white" to="/">Home</RouterLink>
     </nav> -->
 
-    <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor min-w-screen">
+    <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor min-w-screen rounded-md">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink to="/" class="flex items-center">
                 <img src="../assets//logo.svg" class="h-8 mr-3" alt="Vue Logo" />

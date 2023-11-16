@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <aside class="col-span-1 hidden md:block">
+    <aside class="col-span-1 hidden md:hidden lg:block">
         <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4">
             <!-- SEARCH BAR-->
             <div class="flex md:order-2 justify-end">
@@ -33,8 +33,8 @@
             </div>
             <!-- SEARCH BAR -->
         </div>
-        <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4 my-2">
-            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4">{{ $t('latest-posts') }}</h3>
+        <div class="bg-lightItemsColor dark:bg-darkItemsColor p-2 my-2">
+            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4 mx-2 my-2">{{ $t('latest-posts') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-1" class="flex items-center">
@@ -42,8 +42,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 1
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -59,8 +58,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -76,8 +74,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -90,7 +87,7 @@
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
             <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor">
-            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4">{{ $t('trends') }}</h3>
+            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4 mx-2 my-2">{{ $t('trends') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-1" class="flex items-center">
@@ -98,8 +95,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 1
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -115,8 +111,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -132,8 +127,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p
-                                class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -145,43 +139,24 @@
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
+            <!-- <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor"> -->
         </div>
-        <br />
-        <!-- Contact -->
-        <!-- <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md dark:bg-darkItemsColor">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                Bize Ulaşın
-            </h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                Teknik bir sorununuz mu var? Bir beta özelliği hakkında geri bildirim göndermek mi istiyorsunuz? İş
-                planımız hakkında ayrıntılara mı ihtiyacınız var? Bize bildirin.
-            </p>
-            <form action="#" class="space-y-8">
-                <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                    <input type="email" id="email"
-                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                        placeholder="name@gmail.com" required>
-                </div>
-                <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Konu</label>
-                    <input type="text" id="subject"
-                        class="block p-3 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                        placeholder="Size nasıl yardımcı olabileceğimizi bize bildirin" required>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="message"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mesajınız</label>
-                    <textarea id="message" rows="6"
-                        class="block resize-none p-2.5 w-full text-sm text-white bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Yorum bırakın..."></textarea>
-                </div>
+        <!-- Email Subscribe  -->
+        <div class="py-2 lg:py-2 px-4 mx-auto max-w-screen-md bg-lightItemsColor dark:bg-darkItemsColor mb-4">
+            <h4 class="text-2xl my-4 font-semibold text-center text-gray-600 dark:text-white">
+                {{ $t('subscribe-newsletter') }}
+            </h4>
+            <form action="#" method="post" class="flex">
+                <input type="email" name="email" :placeholder="$t('your-email')"
+                    class="w-full p-2 m-2 mr-2 text-gray-600 text-sm font-sans font-semibold dark:text-white bg-gray-50 dark:bg-black border rounded-l focus:outline-none focus:border-blue-300">
                 <button type="submit"
-                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-darkBtnColor dark:hover:bg-sky-700 dark:focus:ring-sky-800">Mesaj
-                    Gönder</button>
+                    class="px-2 py-2 m-2 rounded-r font-sans font-semibold text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 focus:ring-4 dark:bg-darkBtnColor dark:focus:ring-sky-800 focus:ring-blue-300">
+                    {{ $t('subscribe-btn') }}
+                </button>
             </form>
-        </div> -->
-        <!-- Contact -->
-</aside></template>
+        </div>
+        <!-- Email Subscribe  -->
+    </aside>
+</template>
 
 <style lang="scss" scoped></style>

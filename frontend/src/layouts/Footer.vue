@@ -14,8 +14,8 @@
                             <span class="text-sm font-semibold text-gray-400 dark:text-gray-500">v0.1.0</span>
                         </span>
                     </RouterLink>
-                    <!-- Enail Subscribe -->
-                    <div class="max-w-xs my-9">
+                    <!-- Email Subscribe -->
+                    <div class="max-w-xs my-9 sm:block md:hidden lg:hidden">
                         <h4 class="mb-2 text-lg font-semibold text-gray-600 dark:text-white">
                             {{ $t('subscribe-newsletter') }}
                         </h4>
@@ -28,7 +28,7 @@
                             </button>
                         </form>
                     </div>
-                    <!-- Enail Subscribe -->
+                    <!-- Email Subscribe -->
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-4 lg:gap-9 md:gap-9">
                     <div>
