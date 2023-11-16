@@ -164,7 +164,6 @@ class PostDetailView(generics.RetrieveAPIView): # http://127.0.0.1:8000/api/blog
                     return Response({'message': 'Success'}, status.HTTP_202_ACCEPTED)
         else:        
             return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
-        return Response(request.data)
         
     
     
