@@ -37,7 +37,7 @@ class COMMENTAdmin(admin.ModelAdmin):
     
 
 class POST_LIKEAdmin(admin.ModelAdmin):
-    list_display = ('post', 'member')
+    list_display = ('post', 'member', 'is_liked')
     readonly_fields=['post', 'member', 'is_liked']
 
 class POST_SAVEAdmin(admin.ModelAdmin):

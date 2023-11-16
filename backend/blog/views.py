@@ -62,7 +62,7 @@ class PostViewSet(generics.ListAPIView):
         # return context
         
         
-class PostDetailView(generics.RetrieveAPIView):
+class PostDetailView(generics.RetrieveAPIView): # http://127.0.0.1:8000/api/blog/post/5/
     queryset = POST.objects.all()
     serializer_class = POSTSerializer
     pk_url_kwarg = 'pk'
@@ -103,9 +103,12 @@ class PostDetailView(generics.RetrieveAPIView):
                 is_liked = POST_LIKE.objects.filter(member=member.userName, post=self.get_object().id).first()
                 is_saved = POST_SAVE.objects.filter(member=member.userName, post=self.get_object().id).first()
                 if is_liked and is_liked.member.userName == member.userName:
-                    data['is_liked'] = True
+                    if is_liked.is_liked == True:
+                        data['is_liked'] = True
+                        print('true olduuuuu')
                 if is_saved and is_saved.member.userName == member.userName:
-                    data['is_saved'] = True
+                    if is_saved.is_saved == True:
+                        data['is_saved'] = True
             else:
                 return Response({'error': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
 
@@ -131,9 +134,35 @@ class PostDetailView(generics.RetrieveAPIView):
         return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
     
     def put(self, request, pk, *args, **kwargs):
+        instance = self.get_object()
         print(request.headers['Token'])
         print(request.data)
-        if 'Token' not in request.headers:
+        if 'Token' in request.headers:
+            member = MEMBER.objects.filter(tokenData=request.headers['Token']).first()
+            if member and member.tokenData == request.headers['Token']:
+                print('like & save')
+                post = POST.objects.get(pk=self.get_object().id)
+                print(post.id)
+                # print(request.data['is_liked'])
+                print(member.userName)
+                
+                if  'is_liked' in request.data:
+                    liked, create = POST_LIKE.objects.update_or_create(
+                        member=member,
+                        post=post,
+                        defaults={'is_liked': request.data.get('is_liked', False)}
+                    )
+                    liked.save()
+                    return Response({'message': 'Success'}, status.HTTP_202_ACCEPTED)
+                if 'is_saved' in request.data:
+                    saved, create = POST_SAVE.objects.update_or_create(
+                        member=member,
+                        post=post,
+                        defaults={'is_saved': request.data.get('is_saved', False)}
+                    )
+                    saved.save()                
+                    return Response({'message': 'Success'}, status.HTTP_202_ACCEPTED)
+        else:        
             return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
         return Response(request.data)
         
