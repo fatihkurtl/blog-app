@@ -12,6 +12,8 @@ from django.conf import settings
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 
+from rest_framework import generics
+
 
 KEY = '9eZ0fC3OhUaJvFATR7ifw6m2THrfC1dYfoQIWGK66i9JC9osWPKHZTRRY186kiy8'
 
@@ -65,10 +67,10 @@ def login(request):
     return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['PUT'])
-def profile_update(request, username, pk):
-    print(request.data)
-    try:
+class ProfileUpdateViewSet(generics.UpdateAPIView):
+    
+    def put(self, request, pk, *args, **kwargs):
+        
         member = MEMBER.objects.filter(pk=pk).first()
         socialMediaLinks = SocialMediaLink.objects.filter(member=member.userName).first()
         print(socialMediaLinks)
@@ -80,60 +82,58 @@ def profile_update(request, username, pk):
                 member.location = request.data.get('location', member.location)
                 member.bio = request.data.get('bio', member.bio)
                 member.save()
+                
                 if socialMediaLinks == None:
                     socialMediaLinks = SocialMediaLink(member=member)
                 socialMediaLinks.x_url = request.data.get('x', socialMediaLinks.x_url)
                 socialMediaLinks.github_url = request.data.get('github', socialMediaLinks.github_url)
                 socialMediaLinks.linkedin_url = request.data.get('linkedin', socialMediaLinks.linkedin_url)
-                socialMediaLinks.save()                                                     
-                return Response({'message': 'Update Successful', 'status': status.HTTP_202_ACCEPTED}, status.HTTP_202_ACCEPTED)
+                socialMediaLinks.save()
+                
+                return Response({'message': 'Update Successful'}, status.HTTP_202_ACCEPTED)
             else:
-                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
-        return Response({'message': 'User Not Found', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
-    except MEMBER.DoesNotExist:
-        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+                return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
+        return Response({'message': 'User Not Found'}, status.HTTP_401_UNAUTHORIZED)
 
 
-@api_view(['DELETE'])
-def delete_member(request, username, pk):
-    try:
+class DeleteMemberViewSet(generics.DestroyAPIView):
+    
+    def delete(self, request, pk, *args, **kwargs):
+        
         member = MEMBER.objects.filter(pk=pk).first()
         if member != None:
             if request.headers['Token'] == member.tokenData:
                 member.delete()
-                return Response({'message': 'User deleted', 'status': status.HTTP_200_OK}, status.HTTP_200_OK)
+                return Response({'message': 'User deleted'}, status.HTTP_200_OK)
             else:
-                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
-        return Response({'message': 'User Not Found', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
-    except MEMBER.DoesNotExist:
-        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+                return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
+        return Response({'message': 'User Not Found'}, status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['PUT'])
-def set_password(request, username, pk):
-    try: 
+class SetPasswordViewSet(generics.UpdateAPIView):
+    
+    def put(self, request, pk, *args, **kwargs):
+        
         member = MEMBER.objects.filter(pk=pk).first()
         if member != None:
             if request.headers['Token'] == member.tokenData:
-                decodedPassword = jwt.decode(member.password, KEY, algorithms=['HS256'])
+                
+                decodedPassword = jwt.decode(member.password, KEY, algorithms=['HS256'])                
                 if request.data['currentPassword'] == decodedPassword['password']:
                     encodedPassword = jwt.encode({'password': request.data['password']}, KEY, algorithm = 'HS256')
                     member.password = encodedPassword
                     member.save()
-                    return Response({'message': 'Password Changed Successful', 'status': status.HTTP_200_OK}, status.HTTP_200_OK)
+                    return Response({'message': 'Password Changed Successful'}, status.HTTP_200_OK)
                 else:
-                    return Response({'message': 'Old Password Wrong', 'status': status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
-            else:
-                return Response({'message': 'Unauthorized', 'status':status.HTTP_401_UNAUTHORIZED}, status.HTTP_401_UNAUTHORIZED)
-        else:
-            return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
-    except MEMBER.DoesNotExist:
-        return Response({'message': 'User Not Found', 'status':status.HTTP_400_BAD_REQUEST}, status.HTTP_400_BAD_REQUEST)
+                    return Response({'message': 'Old Password Wrong'}, status.HTTP_400_BAD_REQUEST)
+            return Response({'message': 'Unauthorized'}, status.HTTP_401_UNAUTHORIZED)
+        return Response({'message': 'User Not Found'}, status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['POST'])
-def reset_password(request):
-    try:
+class ResetPasswordViewSet(generics.CreateAPIView):
+    
+    def post(self, request, *args, **kwargs):
+        
         email = request.data['to']
         member = MEMBER.objects.filter(email=email).first()
         serializer = MEMBERSerializer(member)
@@ -143,7 +143,7 @@ def reset_password(request):
             message = f"""
                 Dear {serializer.data['fullName']} - ({serializer.data['email']}),\n
                 Click on the link below to securely reset your password:\n
-                http://localhost:5173/auth/new-password/member={serializer.data['tokenData']}\n
+                http://localhost:5173/new-password/member={serializer.data['tokenData']}\n
                 Please do not share this link with others and keep your new password safe.\n
                 Sincerely,
                 fullstack.com team
@@ -155,32 +155,28 @@ def reset_password(request):
                 [email]
             )
             emailw.send(fail_silently=False)
-            return Response({'message': 'Email send successfully', 'status': status.HTTP_202_ACCEPTED}, status=status.HTTP_202_ACCEPTED)
+            return Response({'message': 'Email send successfully'}, status.HTTP_202_ACCEPTED)
         else:
-            return Response({'message': 'This email is not in use', 'status': status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
-    except MEMBER.DoesNotExist:
-        return Response({'message': 'Wrong email no such user', 'status': status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'message': 'This email is not in use'}, status.HTTP_400_BAD_REQUEST)
+
+
+
+class NewPasswordViewSet(generics.UpdateAPIView):
     
-    
-# ! new passport apisi olusturulacak eger token varsa ve sifre eski sifre ile ayni degilse bu islem yapilacak ve kullanici varsa kullanici sorgusu gelen tokenden yapilacak
-@api_view(['POST'])
-def new_password(request):
-    try:
-        if request.headers['Token']:
-            print(request.headers['Token'])
-            print(request.data)
+    def put(self, request, *args, **kwargs):
+        
+        if 'Token' in request.headers:
+            
             member = MEMBER.objects.filter(tokenData=request.headers['Token']).first()
             serializer = MEMBERSerializer(member)
-            print(serializer.data)
+
             if serializer.data['tokenData'] == request.headers['Token']:
                 encodedPassword = jwt.encode({'password': request.data['password']}, KEY, algorithm = 'HS256')
-                member = MEMBER.objects.filter(tokenData=request.headers['Token']).update(password=encodedPassword)   
-                print('sifre degisti')
+                member = MEMBER.objects.filter(tokenData=request.headers['Token']).update(password=encodedPassword) 
+                return Response({'message': 'Password changed successfully'}, status.HTTP_201_CREATED)
             else:
-                return Response({'message': 'User not found', 'status': status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'status': status.HTTP_401_UNAUTHORIZED}, status=status.HTTP_401_UNAUTHORIZED)
         else:
             return Response({'status': status.HTTP_401_UNAUTHORIZED}, status=status.HTTP_401_UNAUTHORIZED)
-    except Exception as e:
-        return Response({'error': e, 'status': status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
-    return Response({'message': 'Password changed successfully', 'status': status.HTTP_201_CREATED}, status.HTTP_201_CREATED)
+
     

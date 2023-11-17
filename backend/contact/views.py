@@ -8,7 +8,7 @@ from .serializers import CONTACTSerializer
 from rest_framework import generics
 
 
-class Contact(generics.RetrieveAPIView):
+class Contact(generics.CreateAPIView):
     
     def post(self, request, *args, **kwargs):
         serializer = CONTACTSerializer(data=request.data)
