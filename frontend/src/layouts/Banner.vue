@@ -57,7 +57,8 @@ const svgTransform = computed(() => {
 
             </div>
 
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex" :style="{ transform: svgTransform, transition: 'transform 0.25s ease-out'}">
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex"
+                :style="{ transform: svgTransform, transition: 'transform 0.25s ease-out' }">
                 <img ref="target" src="/src/assets/logo.svg" alt="vue logo">
             </div>
         </div>

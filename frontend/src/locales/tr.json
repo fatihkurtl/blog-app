@@ -21,9 +21,11 @@
     "legal": "Yasal",
     "terms-conditions": "Hükümler & Koşullar",
     "privacy-policy": "Gizlilik Politikası",
-    "subscribe-btn": "Abone",
+    "subscribe-btn": "Abone ol",
     "subscribe-newsletter": "Haber bültenimize abone ol",
-    "your-email": "E-post adresiniz",
+    "subscribe-desc": "En son haberleri ve gönderileri her hafta bir kez fırından taze olarak gönderdik",
+    "no-spam": "Spam yok. Söz veriyoruz",
+    "your-email": "E-posta adresiniz",
 
     "latest-posts": "Son Gönderiler",
 

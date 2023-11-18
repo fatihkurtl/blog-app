@@ -40,7 +40,7 @@ onClickOutside(userDropdown, (event) => {
     <nav class="bg-lightItemsColor dark:border-borderColor dark:bg-darkItemsColor min-w-screen">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink to="/" class="flex items-center">
-                <img src="../assets//logo.svg" class="h-8 mr-3" alt="Vue Logo" />
+                <img src="../assets/logo.svg" class="h-8 mr-3" alt="Vue Logo" />
                 <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">./fullstack
                     <span class="text-sm font-semibold text-gray-400 dark:text-gray-500">v0.1.0</span>
                 </span>

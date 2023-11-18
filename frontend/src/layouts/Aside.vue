@@ -142,7 +142,7 @@
             <!-- <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor"> -->
         </div>
         <!-- Email Subscribe  -->
-        <div class="py-2 lg:py-2 px-4 mx-auto max-w-screen-md bg-lightItemsColor dark:bg-darkItemsColor mb-4">
+        <!-- <div class="py-2 lg:py-2 px-4 mx-auto max-w-screen-md bg-lightItemsColor dark:bg-darkItemsColor mb-4">
             <h4 class="text-2xl my-4 font-semibold text-center text-gray-600 dark:text-white">
                 {{ $t('subscribe-newsletter') }}
             </h4>
@@ -154,7 +154,7 @@
                     {{ $t('subscribe-btn') }}
                 </button>
             </form>
-        </div>
+        </div> -->
         <!-- Email Subscribe  -->
     </aside>
 </template>

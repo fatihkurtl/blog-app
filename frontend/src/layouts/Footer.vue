@@ -15,7 +15,7 @@
                         </span>
                     </RouterLink>
                     <!-- Email Subscribe -->
-                    <div class="max-w-xs my-9 sm:block md:hidden lg:hidden">
+                    <!-- <div class="max-w-xs my-9 sm:block md:hidden lg:hidden">
                         <h4 class="mb-2 text-lg font-semibold text-gray-600 dark:text-white">
                             {{ $t('subscribe-newsletter') }}
                         </h4>
@@ -27,7 +27,7 @@
                                 {{ $t('subscribe-btn') }}
                             </button>
                         </form>
-                    </div>
+                    </div> -->
                     <!-- Email Subscribe -->
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-4 lg:gap-9 md:gap-9">

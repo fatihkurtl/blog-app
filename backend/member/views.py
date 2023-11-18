@@ -160,7 +160,6 @@ class ResetPasswordViewSet(generics.CreateAPIView):
             return Response({'message': 'This email is not in use'}, status.HTTP_400_BAD_REQUEST)
 
 
-
 class NewPasswordViewSet(generics.UpdateAPIView):
     
     def put(self, request, *args, **kwargs):
