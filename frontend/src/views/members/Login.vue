@@ -7,7 +7,7 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div class="flex flex-col justify-center">
                 <h1
-                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-600 md:text-5xl lg:text-6xl dark:text-white">
+                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     {{ $t('login-banner') }}
                 </h1>
                 <p class="mb-6 text-lg font-sans font-normal text-gray-500 lg:text-xl dark:text-gray-400">
@@ -16,7 +16,7 @@
             </div>
             <div>
                 <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-lightItemsColor shadow-xl dark:bg-darkItemsColor">
-                    <h2 class="text-2xl font-bold text-gray-600 dark:text-white">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
                         {{ $t('login-to') }}
                     </h2>
                     <form class="mt-8 space-y-6" method="POST" enctype="multipart/form-data">

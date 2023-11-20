@@ -25,7 +25,7 @@
     "subscribe-newsletter": "Subscribe to Our Newsletter",
     "subscribe-desc": "We sent latest news and posts once in every week, fresh from the oven",
     "no-spam": "No spam. We promise",
-    "your-email": "Your email",
+    "your-email": "Your e-mail",
 
     "latest-posts": "Latest Posts",
 
@@ -182,5 +182,8 @@
     "like": "Like",
     "add-comment": "Add comment",
     "comment": "Comment",
-    "min-read": "min read"
+    "comments": "Comments",
+    "min-read": "min read",
+
+    "continue-reading": "Continue reading"
 }

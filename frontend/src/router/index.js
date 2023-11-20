@@ -59,7 +59,8 @@ const router = createRouter({
       path: "",
       children: [
         { path: ":slug", component: PostDetail },
-        { path: ":category/:slug", component: CategoryDetail },
+        { path: ":category/:slug", component: PostDetail },
+        // { path: ":category/:slug", component: CategoryDetail },
       ],
     },
     // {
@@ -117,12 +118,12 @@ const router = createRouter({
       path: "",
       children: [
         {
-          path: "profile/:slug",
+          path: "/:slug",
           name: "Auth Member Profile",
           component: MemberProfile,
         },
         {
-          path: "user/:slug",
+          path: "/:username",
           name: "Visitor Profile",
           component: MemberProfile,
         },

@@ -1,33 +1,21 @@
 <script setup>
-
+import Newsletter from './Newsletter.vue';
 </script>
 
 <template>
     <footer class="bg-lightItemsColor dark:bg-darkItemsColor">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="mx-auto min-w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
-                    <RouterLink to="/" class="flex items-center">
+                    <!-- <RouterLink to="/" class="flex items-center">
                         <img src="../assets//logo.svg" class="h-8 mr-3" alt="Vue Logo" />
                         <span
                             class="self-center text-2xl font-bold whitespace-nowrap text-black dark:text-white">./fullstack
                             <span class="text-sm font-semibold text-gray-400 dark:text-gray-500">v0.1.0</span>
                         </span>
-                    </RouterLink>
+                    </RouterLink> -->
                     <!-- Email Subscribe -->
-                    <!-- <div class="max-w-xs my-9 sm:block md:hidden lg:hidden">
-                        <h4 class="mb-2 text-lg font-semibold text-gray-600 dark:text-white">
-                            {{ $t('subscribe-newsletter') }}
-                        </h4>
-                        <form action="#" method="post" class="flex">
-                            <input type="email" name="email" :placeholder="$t('your-email')"
-                                class="w-full p-2 mr-2 text-gray-600 text-sm font-sans font-semibold dark:text-white bg-gray-50 dark:bg-black border rounded-l focus:outline-none focus:border-blue-300">
-                            <button type="submit"
-                                class="p-2 rounded-r font-sans font-semibold text-white bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 focus:ring-4 dark:bg-darkBtnColor dark:focus:ring-sky-800 focus:ring-blue-300">
-                                {{ $t('subscribe-btn') }}
-                            </button>
-                        </form>
-                    </div> -->
+                    <Newsletter />
                     <!-- Email Subscribe -->
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-4 lg:gap-9 md:gap-9">
@@ -91,6 +79,7 @@
                     </div>
                 </div>
             </div>
+            
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"

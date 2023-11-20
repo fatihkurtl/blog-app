@@ -1,5 +1,6 @@
 <script setup>
 import Posts from '../../components/contents/Posts.vue';
+import PostCards from '../../components/contents/PostCards.vue';
 import Aside from '../../layouts/Aside.vue';
 import Banner from '../../layouts/Banner.vue';
 import Newsletter from '../../layouts/Newsletter.vue';
@@ -15,16 +16,13 @@ import Pagination from '../../layouts/Pagination.vue';
             <!-- Blog Posts -->
 
             <!-- Posts  -->
-            <Posts />
+            <PostCards />
             <!-- Posts  -->
 
             <!-- Aside -->
             <Aside />
             <!-- Aside -->
         </div>
-        <!-- Newsletter -->
-        <Newsletter />
-        <!-- Newsletter -->
         <!-- Pagination -->
         <!-- <Pagination /> -->
         <!-- Pagination -->

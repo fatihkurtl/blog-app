@@ -1,7 +1,12 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
 const router = useRouter();
+const route = useRoute();
+
+console.log('params', route.params);
+console.log('query', route.query);
+console.log(route.name);
 </script>
 
 <template>
@@ -11,8 +16,12 @@ const router = useRouter();
                 <div class="flex flex-col md:flex-row items-center justify-between">
                     <div class="w-full md:w-1/3">
                         <img class="rounded-full w-48 h-48 mx-auto" src="/src/assets/images/visitor.png" alt="Fatih Kurt">
-                        <h1 class="text-4xl text-gray-600 dark:text-white font-sans font-bold text-center mt-4">Fatih Kurt
-                        </h1>
+                        <h1 v-if="route.name.includes('Auth')" class="text-4xl text-gray-900 dark:text-white font-sans font-bold text-center mt-4">
+                            Fatih Kurt
+                        </h1>                        
+                        <h1 v-if="!route.name.includes('Auth')" class="text-4xl text-gray-900 dark:text-white font-sans font-bold text-center mt-4">
+                            {{ route.query.name }}
+                        </h1>                        
                         <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">Fullstack Developer</p>
                         <p class="text-md font-sans text-gray-600 dark:text-gray-400 text-center">
                             {{ $t('joined-on') }} Oct 13, 2023
@@ -29,13 +38,13 @@ const router = useRouter();
                             <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">GitHub</a>
                             <a href="#" class="text-blue-500 font-sans font-semibold hover:underline">LinkedIn</a>
                         </div>
-                        <button @click="router.push('/settings/profile/member=:member-token')"
+                        <button v-if="route.name.includes('Auth')" @click="router.push('/settings/profile/member=:member-token')"
                             class="bg-lightBtnColor hover:bg-sky-600 dark:hover:bg-sky-700 focus:ring-4 dark:bg-darkBtnColor dark:focus:ring-sky-800 focus:ring-blue-300 font-sans text-white px-4 py-2 rounded mt-4 mx-auto block">
                             {{ $t('edit-profile') }}
                         </button>
                     </div>
                     <div class="w-full md:w-2/3 mt-8 md:mt-0 md:pl-8">
-                        <h2 class="text-3xl font-bold mb-4 text-gray-600 dark:text-white">{{ $t('recent-commnets') }}</h2>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">{{ $t('recent-commnets') }}</h2>
                         <p class="text-lg flex items-center text-gray-600 dark:text-gray-400 mb-4">
                             <!-- <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">

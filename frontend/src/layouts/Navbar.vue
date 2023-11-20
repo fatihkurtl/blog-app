@@ -132,7 +132,7 @@ onClickOutside(userDropdown, (event) => {
                         <div class="py-1" role="menu" aria-orientation="vertical"
                             aria-labelledby="dropdownUserAvatarButton">
                             <div class="px-1 py-1 text-base text-gray-900 dark:text-white">
-                                <RouterLink to="/profile/:slug"
+                                <RouterLink :to="{name: 'Auth Member Profile', params: {'slug': 'fatihkurtl'}, query: {'name': 'Fatih Kurt'}}"
                                     class="block px-4 py-2 font-sans text-base hover:underline text-gray-900 hover:text-sky-600 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-sky-600">
                                     <div>Fatih Kurt</div>
                                     <div class="font-sans text-sm truncate">@username</div>

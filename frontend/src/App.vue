@@ -17,12 +17,12 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
 </script>
 
 <template>
-  <div class="container min-h-screen min-w-full mx-auto px-4 md:container md:mx-auto dark:bg-darkBgColor"> <!-- px-4 -->
+  <div class="container min-h-screen min-w-full mx-auto md:container md:mx-auto dark:bg-darkBgColor"> <!-- px-4 -->
     <header>
       <Navbar />
     </header>
     <!-- MOBILE SEARCH BAR-->
-      <Searchbar />
+    <Searchbar />
     <!-- MOBILE SEARCH BAR -->
     <RouterView class="router-view" v-slot="{ Component }">
       <Transition name="page-opacity" mode="out-in">

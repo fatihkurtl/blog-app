@@ -4,7 +4,7 @@
 
 <template>
     <section class="mx-auto my-4 p-8 bg-lightItemsColor dark:bg-darkItemsColor">
-        <h1 class="text-gray-600 dark:text-white text-3xl font-extrabold mb-6 text-center">{{ $t('privacy-header') }}</h1>
+        <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-6 text-center">{{ $t('privacy-header') }}</h1>
         <p class="block text-gray-600 dark:text-white text-md font-sans font-semibold mb-4">
             {{ $t('privacy-description') }}
         </p>

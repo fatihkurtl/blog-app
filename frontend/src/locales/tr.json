@@ -179,9 +179,12 @@
     "delete-account": "Hesabı Sil",
     "any-questions": "Herhangi bir sorunuz varsa iletişime geçin.",
 
-    "like": "Beğen",
+    "like": "Beğeni",
     "add-comment": "Yorum ekle",
     "comment": "Yorum",
-    "min-read": "dakika okuma"
+    "comments": "Yorumlar",
+    "min-read": "dakika okuma",
+
+    "continue-reading": "Okumaya devam et"
 
 }

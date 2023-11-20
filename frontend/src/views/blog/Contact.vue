@@ -7,10 +7,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <section class="bg-lightItemsColor dark:bg-darkItemsColor col-span-5">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black dark:text-white">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
                         {{$t('contact-us')}}
                     </h2>
-                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                    <p class="mb-8 lg:mb-16 font-sans font-semibold text-center text-gray-500 dark:text-gray-400 sm:text-xl">
                         {{$t('contact-desc')}}
                     </p>
                     <form action="#" class="space-y-8">

@@ -4,7 +4,7 @@
 
 <template>
     <aside class="col-span-1 hidden md:hidden lg:block">
-        <div class="bg-lightItemsColor dark:bg-darkItemsColor p-4">
+        <div class="rounded-lg p-4 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500"><!-- bg-lightItemsColor dark:bg-darkItemsColor -->
             <!-- SEARCH BAR-->
             <div class="flex md:order-2 justify-end">
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
@@ -27,14 +27,14 @@
                         <span class="sr-only">Search icon</span>
                     </div>
                     <input type="text" id="search-navbar"
-                        class="block w-full p-2 pl-10 font-sans font-semibold text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="block w-full p-2 pl-10 font-sans font-semibold text-sm text-gray-900 border dark:bg-darkBgColor dark:border-gray-600 dark:placeholder-gray-400 dark:text-white border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         :placeholder="$t('search')">
                 </div>
             </div>
             <!-- SEARCH BAR -->
         </div>
-        <div class="bg-lightItemsColor dark:bg-darkItemsColor p-2 my-2">
-            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4 mx-2 my-2">{{ $t('latest-posts') }}</h3>
+        <div class="border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-lg p-2 my-2"> <!-- bg-lightItemsColor dark:bg-darkItemsColor -->
+            <h3 class="text-xl font-sans font-bold text-gray-900 dark:text-white mb-4 mx-2 my-2">{{ $t('latest-posts') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-1" class="flex items-center">
@@ -42,10 +42,10 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 1
                             </p>
-                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            <p class="text-sm font-sans text-gray-500 truncate dark:text-gray-400">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit. Vivamus quis porta dui. Ut eu iaculis massa.
                             </p>
@@ -58,7 +58,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -74,7 +74,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -86,8 +86,8 @@
                 </li>
                 <!-- Daha fazla post eklemek için liste öğelerini çoğaltabilirsiniz -->
             </ul>
-            <hr class="w-full h-1 my-8 bg-gray-200 border-0 dark:bg-darkBgColor">
-            <h3 class="text-xl font-sans font-bold text-gray-600 dark:text-white mb-4 mx-2 my-2">{{ $t('trends') }}</h3>
+            <hr class="w-full h-0.5 my-8 bg-gray-300 border-0 dark:bg-gray-700 rounded-lg">
+            <h3 class="text-xl font-sans font-bold text-gray-900 dark:text-white mb-4 mx-2 my-2">{{ $t('trends') }}</h3>
             <ul>
                 <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-1" class="flex items-center">
@@ -95,7 +95,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 1
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -111,7 +111,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 2
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -127,7 +127,7 @@
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-md font-sans font-semibold text-gray-600 truncate dark:text-white">
+                            <p class="text-md font-sans font-semibold text-gray-900 truncate dark:text-white">
                                 Blog Post 3
                             </p>
                             <p class="text-sm text-gray-500 truncate dark:text-gray-400">

@@ -133,7 +133,7 @@ const uploadProfilePhoto = (e) => {
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div class="flex flex-col justify-center">
                 <h1
-                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-600 md:text-5xl lg:text-6xl dark:text-white">
+                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     {{ $t('register-banner') }}
                 </h1>
                 <p class="mb-6 text-lg font-sans font-normal lg:text-xl text-gray-500 dark:text-gray-400">
@@ -142,7 +142,7 @@ const uploadProfilePhoto = (e) => {
             </div>
             <div>
                 <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-lightItemsColor shadow-xl dark:bg-darkItemsColor">
-                    <h2 class="text-gray-600 dark:text-white text-3xl font-extrabold mb-6 text-center">{{ $t('sign-up') }}
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-6 text-center">{{ $t('sign-up') }}
                     </h2>
                     <form method="POST" @submit.prevent="newUser" enctype="multipart/form-data">
                         <div class="mb-4">
