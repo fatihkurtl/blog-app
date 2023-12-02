@@ -9,31 +9,31 @@
                 <ul class="inline-flex -space-x-px text-sm">
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">{{$t('previous')}}</a>
+                            class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white rounded-s-lg">{{$t('previous')}}</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">1</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">1</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">2</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">2</a>
                     </li>
                     <li>
                         <a href="#" aria-current="page"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">3</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">3</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">4</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">4</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">5</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">5</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-darkItemsColor dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">{{$t('next')}}</a>
+                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 py-2 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white rounded-e-lg">{{$t('next')}}</a>
                     </li>
                 </ul>
             </nav>

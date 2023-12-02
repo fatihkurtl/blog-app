@@ -1,18 +1,27 @@
 <script setup>
+import { ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-
+import { useFetch } from '../../composables/services/posts.get';
+import PostSkeleton from '../skeletons/PostSkeleton.vue';
+import PostErrorsVue from '../errors/PostErrors.vue';
 
 const route = useRoute();
+
+const { response, loading, error } = useFetch('/products');
+
 </script>
 
 <template>
-    <section class="col-span-2">
+    <PostErrorsVue v-if="error" :error="error" />
+    <PostSkeleton v-if="loading && !error" />
+    <section v-if="!loading && !error" class="col-span-2">
         <ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start">
             <RouterLink :to="(route.fullPath === '/') ? '/blog-post-1' : route.fullPath + '/blog-post-1'"
                 class="relative flex flex-col sm:flex-row xl:flex-col items-start border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-lg px-2 py-2">
-                <div class="order-1 sm:ml-6 xl:ml-0">
+                <div class="order-1 sm:ml-6 xl:ml-0 items">
                     <h3 class="mb-1 text-gray-900 font-semibold dark:text-white">
-                        <span class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
+                        <span
+                            class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
                         <span>
                             Completely unstyled, fully accessible UI components
                         </span>
@@ -88,7 +97,8 @@ const route = useRoute();
                 class="relative flex flex-col sm:flex-row xl:flex-col items-start border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-lg px-2 py-2">
                 <div class="order-1 sm:ml-6 xl:ml-0">
                     <h3 class="mb-1 text-gray-900 font-semibold dark:text-white">
-                        <span class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
+                        <span
+                            class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
                         <span>
                             Completely unstyled, fully accessible UI components
                         </span>
@@ -164,7 +174,8 @@ const route = useRoute();
                 class="relative flex flex-col sm:flex-row xl:flex-col items-start border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-lg px-2 py-2">
                 <div class="order-1 sm:ml-6 xl:ml-0">
                     <h3 class="mb-1 text-gray-900 font-semibold dark:text-white">
-                        <span class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
+                        <span
+                            class="mb-1 block text-xs leading-6 text-gray-500 dark:text-500 hover:text-gray-600 dark:hover:text-gray-400">2023-10-28</span>
                         <span>
                             Completely unstyled, fully accessible UI components
                         </span>

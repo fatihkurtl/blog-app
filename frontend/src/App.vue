@@ -24,11 +24,11 @@ console.log(import.meta.env.VITE_API_BASE_URL);  // API base URL
     <!-- MOBILE SEARCH BAR-->
     <Searchbar />
     <!-- MOBILE SEARCH BAR -->
-    <RouterView class="router-view" v-slot="{ Component }">
-      <Transition name="page-opacity" mode="out-in">
+    <RouterView />
+      <!-- <Transition name="page-opacity" mode="out-in">
         <component :is="Component" />
-      </Transition>
-    </RouterView>
+      </Transition> -->
+    <!-- </RouterView> -->
     <Footer />
   </div>
 </template>

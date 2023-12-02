@@ -4,9 +4,9 @@ import { useRoute, useRouter } from 'vue-router';
 const router = useRouter();
 const route = useRoute();
 
-console.log('params', route.params);
-console.log('query', route.query);
-console.log(route.name);
+console.log('params =>', route.params);
+console.log('query =>', route.query);
+console.log('route name =>', route.name);
 </script>
 
 <template>

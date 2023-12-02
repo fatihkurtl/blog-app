@@ -185,6 +185,10 @@
     "comments": "Yorumlar",
     "min-read": "dakika okuma",
 
-    "continue-reading": "Okumaya devam et"
+    "articles": "Makaleler",
+
+    "error-loading-posts": "Gönderiler yüklenirken hata...",
+    "error-loading-post": "Gönderi yüklenirken hata...",
+    "error-loading-articles": "Makaleler yüklenirken hata..."
 
 }

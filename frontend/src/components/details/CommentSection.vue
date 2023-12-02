@@ -1,10 +1,15 @@
 <script setup>
 import { ref } from 'vue';
+import { useFetch } from '../../composables/services/post.get';
 import Success from '../notifications/comment/Success.vue';
 import Failure from '../notifications/comment/Failure.vue';
+import CommentsSkeleton from '../skeletons/CommentsSkeleton.vue';
 
 const showCommentSuccess = ref(false);
 const showCommentFailure = ref(false);
+
+// post id buraya props olarak gelecek post yorumlari o id'den cekilecek ve comment post atarken o id kullanilacak 
+const { response, loading, error } = useFetch('/products');
 
 // const save = () => { // comment basarili olursa diye bir ornek, ayni islem basarisiz sonuclar icin showCommentFailure ile de yapilacak
 //     showCommentSuccess.value = true;
@@ -19,16 +24,17 @@ const showCommentFailure = ref(false);
 <template>
     <div class="p-6 mt-8">
         <div class="flex justify-between items-center mb-6">
-                  <h2 class="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">{{ $t('comments') }}</h2>
-              </div>
+            <h2 class="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">{{ $t('comments') }}</h2>
+        </div>
         <!-- Commnet Form -->
+        <!-- <CommentsSkeleton /> -->
         <form class="mb-6">
             <!-- <div
                 class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-darkBgColor dark:border-gray-700"> -->
-                <!-- <label for="comment" class="text-gray-600 dark:text-white">{{ $t('comment-placeholder') }}</label> -->
-                <textarea id="comment" rows="6"
-                    class="py-2 px-4 mb-4 w-full text-sm font-sans font-medium text-gray-900 border-gray-300 dark:border-gray-600 rounded-lg bg-lightItemsColor focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder-gray-400 dark:text-white dark:placeholder-gray-400 dark:bg-darkBgColor"
-                    :placeholder="$t('comment-placeholder')" required></textarea>
+            <!-- <label for="comment" class="text-gray-600 dark:text-white">{{ $t('comment-placeholder') }}</label> -->
+            <textarea id="comment" rows="6"
+                class="py-2 px-4 mb-4 w-full text-sm font-sans font-medium text-gray-900 border-gray-300 dark:border-gray-600 rounded-lg bg-lightItemsColor focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder-gray-400 dark:text-white dark:placeholder-gray-400 dark:bg-darkBgColor"
+                :placeholder="$t('comment-placeholder')" required></textarea>
             <!-- </div> -->
             <button type="submit"
                 class="inline-flex items-center py-2.5 px-4 text-xs text-center dark:bg-darkBtnColor dark:hover:bg-sky-700 bg-lightBtnColor hover:bg-sky-600 text-white font-semibold rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
@@ -39,13 +45,15 @@ const showCommentFailure = ref(false);
         <!-- Comment -->
         <article
             class="p-6 mb-6 text-base rounded-lg border-t border-gray-200 dark:border-gray-700 bg-lightItemsColor dark:bg-darkItemsColor">
-            <footer class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center mb-2">
                 <div class="flex items-center">
-                    <RouterLink :to="{ name: 'Visitor Profile', params: { 'username': 'bonnie_green'}, query: {'name': 'Bonnie Green'} }" class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white"><img
+                    <RouterLink
+                        :to="{ name: 'Visitor Profile', params: { 'username': 'bonnie_green' }, query: { 'name': 'Bonnie Green' } }"
+                        class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white"><img
                             class="mr-2 w-6 h-6 rounded-full"
                             src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie Green">
-                            Bonnie Green
-                        </RouterLink>
+                        Bonnie Green
+                    </RouterLink>
                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-03-12"
                             title="March 12th, 2022">Mar. 12, 2022</time></p>
                 </div>
@@ -70,7 +78,7 @@ const showCommentFailure = ref(false);
                         </li>
                     </ul>
                 </div>
-            </footer>
+            </div>
             <p class="text-gray-600 dark:text-white">
                 The article covers the essentials, challenges, myths and stages the UX designer should consider while
                 creating the design strategy.
@@ -89,12 +97,14 @@ const showCommentFailure = ref(false);
         </article>
         <article
             class="p-6 text-base rounded-lg border-t border-gray-200 dark:border-gray-700 bg-lightItemsColor dark:bg-darkItemsColor">
-            <footer class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center mb-2">
                 <div class="flex items-center">
-                    <RouterLink :to="{ name: 'Visitor Profile', params: { 'username': 'helene_engels'}, query: {'name': 'Helene Engels'} }" class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white"><img
+                    <RouterLink
+                        :to="{ name: 'Visitor Profile', params: { 'username': 'helene_engels' }, query: { 'name': 'Helene Engels' } }"
+                        class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white"><img
                             class="mr-2 w-6 h-6 rounded-full"
                             src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Helene Engels">
-                            Helene Engels
+                        Helene Engels
                     </RouterLink>
                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-06-23"
                             title="June 23rd, 2022">Jun. 23, 2022</time></p>
@@ -119,7 +129,7 @@ const showCommentFailure = ref(false);
                         </li>
                     </ul>
                 </div>
-            </footer>
+            </div>
             <p class="text-gray-600 dark:text-white">
                 Thanks for sharing this. I do came from the Backend development and explored some of the tools to design my
                 Side Projects.

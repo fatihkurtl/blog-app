@@ -5,6 +5,7 @@ import Aside from '../../layouts/Aside.vue';
 import Banner from '../../layouts/Banner.vue';
 import Newsletter from '../../layouts/Newsletter.vue';
 import Pagination from '../../layouts/Pagination.vue';
+import Articles from '../../layouts/Articles.vue';
 </script>
 
 <template>
@@ -22,10 +23,14 @@ import Pagination from '../../layouts/Pagination.vue';
             <!-- Aside -->
             <Aside />
             <!-- Aside -->
+
         </div>
         <!-- Pagination -->
         <!-- <Pagination /> -->
         <!-- Pagination -->
+        <!-- Articles -->
+        <Articles />
+        <!-- Articles -->
 
     </main>
 </template>

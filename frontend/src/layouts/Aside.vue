@@ -1,4 +1,9 @@
 <script setup>
+import AsideSkeleton from '../components/skeletons/AsideSkeleton.vue';
+import { useFetch } from '../composables/services/posts.get';
+
+// response'a filter uygulanip son 3 post ve trends kategorisindeki son 3 post alinacak
+const { response, loading, error } = useFetch('/products');
 
 </script>
 
@@ -35,8 +40,9 @@
         </div>
         <div class="border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 rounded-lg p-2 my-2"> <!-- bg-lightItemsColor dark:bg-darkItemsColor -->
             <h3 class="text-xl font-sans font-bold text-gray-900 dark:text-white mb-4 mx-2 my-2">{{ $t('latest-posts') }}</h3>
-            <ul>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+            <AsideSkeleton v-if="loading && !error" />
+            <ul v-if="!loading && !error">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-1" class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
@@ -52,7 +58,7 @@
                         </div>
                     </RouterLink>
                 </li>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-2" class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
@@ -68,7 +74,7 @@
                         </div>
                     </RouterLink>
                 </li>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/post-detail-3" class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
@@ -88,8 +94,9 @@
             </ul>
             <hr class="w-full h-0.5 my-8 bg-gray-300 border-0 dark:bg-gray-700 rounded-lg">
             <h3 class="text-xl font-sans font-bold text-gray-900 dark:text-white mb-4 mx-2 my-2">{{ $t('trends') }}</h3>
-            <ul>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+            <AsideSkeleton v-if="loading && !error" />
+            <ul v-if="!loading && !error">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-1" class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
@@ -105,7 +112,7 @@
                         </div>
                     </RouterLink>
                 </li>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-2" class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">
@@ -121,7 +128,7 @@
                         </div>
                     </RouterLink>
                 </li>
-                <li class="py-3 px-3 dark:hover:bg-neutral-800 hover:bg-neutral-200 rounded-lg sm:py-4 mb-2">
+                <li class="py-3 px-3 dark:hover:bg-gray-800 hover:bg-gray-200 rounded-lg sm:py-4 mb-2">
                     <RouterLink to="/trends/post-detail-3" class="flex items-center dark:hover:text-gray-300">
                         <div class="flex-shrink-0">
                             <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300" alt="Neil image">

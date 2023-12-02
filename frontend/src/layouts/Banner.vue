@@ -1,6 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { useMouseInElement } from '@vueuse/core';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const target = ref(null);
 
@@ -59,7 +62,29 @@ const svgTransform = computed(() => {
 
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex"
                 :style="{ transform: svgTransform, transition: 'transform 0.25s ease-out' }">
-                <img ref="target" src="/src/assets/logo.svg" alt="vue logo">
+                <img ref="target" v-if="route.name == 'Home'" src="/src/assets/logo.svg" alt="vue logo">
+                <!-- <h1
+                ref="target"
+                v-if="route.name == 'Web Dev'"
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white">
+                    {{ $t('web-development') }}
+                </h1>
+                <h1
+                ref="target"
+                v-if="route.name == 'Trends'"
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white">
+                    {{ $t('trends') }}
+                </h1>
+                <h1
+                ref="target"
+                v-if="route.name == 'Dev Tools'"
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white">
+                    {{ $t('developer-tools') }}
+                </h1> -->
+                <!-- <h1 ref="target" v-if="route.name == 'Dev Tools'"
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-transparent dark:text-transparent bg-clip-text dark:bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-purple-500 dark:from-purple-500 via-blue-500 dark:via-blue-500 to-green-500 dark:to-green-500 dark:text-white">
+                    {{ $t('developer-tools') }}
+                </h1> -->
             </div>
         </div>
     </section>

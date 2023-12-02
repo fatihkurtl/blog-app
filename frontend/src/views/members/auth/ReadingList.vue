@@ -1,19 +1,20 @@
 <script setup>
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
 </script>
 
 <template>
-    <section class="mx-auto my-4 p-8 bg-lightItemsColor dark:bg-darkItemsColor">
-        <!-- Örnek Kaydedilmiş Postlar -->
+    <section class="mx-auto my-4 p-8">
         <div
-            class="w-full mx-auto max-w-5xl p-4 border border-gray-200 dark:border-gray-700 bg-lightItemsColor rounded-lg sm:p-8 dark:bg-darkItemsColor">
+            class="w-full mx-auto max-w-5xl p-4 border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 px-2 py-2 rounded-lg sm:p-8">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4">{{ $t('reading-list') }} (0)</h2>                
+                <h2 class="text-2xl font-bold text-gray-600 dark:text-white mb-4">{{ $t('reading-list') }} (0)</h2>
             </div>
             <div class="flow-root">
-                <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-                    <li class="py-3 sm:py-4">
-                        <div class="flex items-center">
+                <ul role="list" class="">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-gray-800 px-2 rounded-lg">
+                        <RouterLink :to="'/blog-post-1'" class="flex items-center">
                             <div class="flex-shrink-0">
                                 <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
                                     alt="Neil image">
@@ -49,10 +50,10 @@
                                 <!-- Kaydetme -->
 
                             </div>
-                        </div>
+                        </RouterLink>
                     </li>
-                    <li class="py-3 sm:py-4">
-                        <div class="flex items-center ">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-gray-800 px-2 rounded-lg">
+                        <RouterLink :to="'/blog-post-2'" class="flex items-center">
                             <div class="flex-shrink-0">
                                 <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
                                     alt="Bonnie image">
@@ -84,10 +85,10 @@
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
-                        </div>
+                        </RouterLink>
                     </li>
-                    <li class="py-3 sm:py-4">
-                        <div class="flex items-center">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-gray-800 px-2 rounded-lg">
+                        <RouterLink :to="'/blog-post-3'" class="flex items-center">
                             <div class="flex-shrink-0">
                                 <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
                                     alt="Michael image">
@@ -119,10 +120,10 @@
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
-                        </div>
+                        </RouterLink>
                     </li>
-                    <li class="py-3 sm:py-4">
-                        <div class="flex items-center ">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-gray-800 px-2 rounded-lg">
+                        <RouterLink :to="'/blog-post-4'" class="flex items-center">
                             <div class="flex-shrink-0">
                                 <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
                                     alt="Lana image">
@@ -154,10 +155,10 @@
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
-                        </div>
+                        </RouterLink>
                     </li>
-                    <li class="pt-3 pb-0 sm:pt-4">
-                        <div class="flex items-center ">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-gray-800 px-2 rounded-lg">
+                        <RouterLink :to="'/blog-post-5'" class="flex items-center">
                             <div class="flex-shrink-0">
                                 <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/400x300"
                                     alt="Thomas image">
@@ -189,7 +190,7 @@
                                 </button>
                                 <!-- Kaydetme -->
                             </div>
-                        </div>
+                        </RouterLink>
                     </li>
                 </ul>
             </div>

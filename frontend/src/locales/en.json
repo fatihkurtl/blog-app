@@ -185,5 +185,9 @@
     "comments": "Comments",
     "min-read": "min read",
 
-    "continue-reading": "Continue reading"
+    "articles": "Articles",
+
+    "error-loading-posts": "Error loading posts...",
+    "error-loading-post": "Error loading post...",
+    "error-loading-articles": "Error loading articles..."
 }
